@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en" class="desktop mbr-site-loaded">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMLites</title>
+</head>
+<style>
+  header{
+    display: flex;
+    flex-direction: row;
+   
+  }
+
+  #logo{
+    margin-left: 20px;
+  }
+  .smile{
+    margin-left: 80px;
+    
+  }
+    .item1{
+        
+        padding: 2px; 
+        color: rgb(6, 6, 6);
+        height: fit-content;
+        flex-wrap: wrap;
+        text-align: center;
+        text-shadow: 1.5px 1.5px 1.5px rgb(120, 149, 195);    
+        border-radius: 100px 100px 100px 100px;    
+      }
+    #container{
+        display: flex;
+        flex-direction: row;
+    }
+    header{
+        text-align: center;
+        height: 75px;
+        font-size: 40px;
+        color: rgb(0, 0, 0) ;
+        padding-top: 10px;
+        padding-bottom: 40px;
+       
+
+
+    }
+    .smile{
+        text-align: center;
+        left: 50%;
+        font-family: fantasy;
+        color: rgb(0, 0, 0);
+      }
+      
+      span{
+        margin-bottom: 60px;
+        display: inline-block;
+        padding-left: 30px;
+        color: rgb(0, 0, 0);
+        font-size: 40px;
+        text-shadow: 5px 5px 5px rgb(63, 132, 132);
+        animation: jiggle 5s linear infinite; 
+        text-decoration-color: rgb(13, 13, 13) ;
+    }
+      @keyframes jiggle {
+        0%  {text-shadow: 0 0 30px ;}
+        50% {text-shadow: 5 5 30px ;
+        transform: translateY(30px);}
+        100% {text-shadow: 0 0 30px ;}
+      }
+      span:nth-child(1)
+      {
+        animation-delay: 0.5s;
+      }
+      span:nth-child(2)
+      {
+        animation-delay: 1s;
+      }
+      span:nth-child(3)
+      {
+        animation-delay: 1.5s;
+      }
+      span:nth-child(4)
+      {
+        animation-delay: 2s;
+      }
+      span:nth-child(5)
+      {
+        animation-delay: 2.5s;
+      }
+      span:nth-child(6)
+      {
+        animation-delay: 3.5s;
+      }
+      span:nth-child(7)
+      {
+        animation-delay: 4s;
+      }
+      span:nth-child(8)
+      {
+        animation-delay: 4.5s;
+      }
+      span:nth-child(9)
+      {
+        animation-delay: 5s;
+      }
+      span:nth-child(10)
+      {
+        animation-delay: 5.5s;
+      }
+      span:nth-child(11)
+      {
+        animation-delay: 6s;
+      }
+      span:nth-child(12)
+      {
+        animation-delay: 6.5s;
+      }
+      span:nth-child(13)
+      {
+        animation-delay: 7s;
+      }
+      span:nth-child(14)
+      {
+        animation-delay: 7.5s;
+      }
+      #exp{
+        color:rgb(7, 7, 7);
+      }
+        
+      .c1{
+        padding: 10 px;
+      }
+      #A{
+        text-align: center;
+        font-size: 25px;
+      }
+      img{
+        border-radius: 15px;
+        margin-top: 5px;
+      }
+      legend{
+        color:rgb(10, 10, 10)
+      }
+      .collapsible {
+        background-color: #f7f7f700;
+        color: #0a0a0a;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+      }
+      
+      /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+      .active, .collapsible:hover {
+        background-color: #cccccc7d;
+      }
+      
+      /* Style the collapsible content. Note: hidden by default */
+      .content {
+        
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color:rgba(102, 95, 95, 0.237);
+      }
+      p{
+        color:#020202;
+      }
+      button{
+        background-color: rgb(15, 2, 2);
+        color: #eee;
+        
+      }
+      fieldset{
+        margin: 50px;
+        background-color: rgba(255, 255, 255, 0);
+        color: #010000;
+      }
+      img{
+        border: 2px solid rgb(39, 38, 38);
+      }
+      img:hover{
+        box-shadow:0 0 2px 2px rgba(71, 71, 83, 0.701);
+
+      }
+      #review{
+        border: 1px solid black;
+        border-radius: 5px;
+        padding:5px
+      }
+      #review:hover{
+        background-color: #6d6d6d70;
+      }
+      #a1{
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+      table{
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+        margin-right: 15px;
+      }
+
+      .fa {
+        padding: 10px;
+        font-size: 30px;
+        width: 50px;
+        
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        border:1px solid rgb(88, 87, 87);
+      }
+      
+      /* Add a hover effect if you want */
+      .fa:hover {
+        opacity: 0.7;
+      }
+      
+      /* Set a specific color for each brand */
+      
+      /* Facebook */
+      .fa-facebook {
+        background:#a3a4a5;
+        color: rgb(0, 0, 0);
+      }
+      
+      /* Twitter */
+      .fa-twitter {
+        background: #a3a4a5;
+        color: rgb(0, 0, 0);
+      }
+      .fa-instagram {
+        background: #a3a4a5;
+        color: rgb(0, 0, 0);
+      }
+      
+      /* Twitter */
+      .fa-whatsapp {
+        background: #a3a4a5;
+        color: rgb(0, 0, 0);
+      }
+      #foot{
+        display:flex;
+        flex-direction: row-reverse;
+      }
+      .footitem{
+        flex-wrap: wrap;
+        width: fit-content;
+        padding: 20px 20px 20px 20px;
+
+      }
+      .company{
+        text-decoration: none;
+        color:#010000
+       }
+       .company:hover{
+        text-decoration: underline;
+       }
+
+      
+</style>  
+<body style="background-image: url(https://cdn.hovia.com/app/uploads/blue-abstract-vector-world-map-wallpaper-mural-Plain-820x532.jpg);">
+
+    <header>
+      <div id="logo">
+        <img height="100px" src="logo.PNG">
+      </div>
+        <div class = "smile">
+            <span>G</span>
+            <span>R</span>
+            <span>I</span>
+            <span>P</span>
+            <span> </span>
+            <span>Y</span>
+            <span>O</span>
+            <span>U</span>
+            <span>R</span>
+            <span> </span>
+            <span>T</span>
+            <span>R</span>
+            <span>I</span>
+            <span>P</span>
+          </div>
+    </header>
+    <div id="exp">
+      
+      <hr>
+      <div id="A" style="color: #070707;">
+      Make your trip marvellous through the best options and guidance on our platform GRIP THE TRIP.
+     </div>
+     <hr>
+     
+     <table style="width: 100%" ;>
+       <th style="text-align: left;">
+        Travelling Destinations:
+        </th> 
+        <th style="text-align: centre"; >Travel with us</th>
+        <th style="text-align: left;"> Services provided:</th>
+        <tr>
+          <td>
+          <ul>
+            <li>Kerala</li>
+            <li>Jammu & Kashmir</li>
+            <li>Venice</li>
+            <li>Paris</li>
+            <li>Maldives</li>
+          </ul>
+          </td>
+
+          <td>
+           <img src="https://img.freepik.com/premium-vector/summer-time-logo-set-vector-illustration_95169-229.jpg" height="150px" style="margin-left:240px;">
+          </td>
+         
+
+       
+       <td>
+        <ul>
+          <li>Hotel/Accommodations</li>
+          <li>Things to do</li>
+          <li>Restaurants</li>
+          <li>Popular destinations</li>
+          <li>Transport</li>
+        </ul>
+       </td>
+        </tr>
+      </table>  
+        
+        <hr>
+      </div>
+    <div id="container">
+
+    <div class="item1"> KERALA
+      <a href="kerala.html" title="KERALA"  > 
+        <img src="https://2.bp.blogspot.com/-M3ou-DRPHt4/T-aCem7r-6I/AAAAAAAAAV8/ZskbNUyhRHg/s1600/11579.jpg" alt="Kerala" height="200px" width="245px">
+      </a>
+        
+    </div>
+    <div class="item1"> JAMMU & KASHMIR
+      <a href="jammu-kashmir.html" title="JAMMU & KASHMIR" >
+        <img src="https://www.ifairer.com/article_image/1563452169-ifairer.jpg" alt="JAMMU & KASHMIR" height="200px" width="245px">
+      </a>
+    </div>
+    <div class="item1" > VENICE
+      <a href="venice.html" title="VENICE">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEV55Bu-QzF1tlWTwkCQD5IP3c9twt6A8a-Q&usqp=CAU" alt="Venice" height="200px" width="245px">
+      </a>
+    </div>
+    <div class="item1"> PARIS
+      <a href="paris.html" title="PARIS">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVGLJMZS65fv0lcbWPukns7kkZ169MAmeu3FYq4CYJ-F2jlzJmOKIVsLleva4Azey-Kf8&usqp=CAU" alt="Paris" height="200px" width="245px">
+      </a> 
+    </div> 
+    <div class="item1" > MALDIVES
+      <a href="maldives.html" title="MALDIVES">
+        <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4JElZ7J3Oqk4RL1RWS_OXO7MV40_A2gzb1w&usqp=CAU" alt="Maldives" height="200px" width="245px">
+      </a>
+    </div>
+</div>
+<div>
+  <hr>
+
+  <div id="a1">
+
+    <h4 style="color: rgb(0, 0, 0);">DROP YOUR REVIEWS HERE!</h4>
+    <a id="review" href="reviewform.html" >CLICK HERE</a>
+  </div>
+  
+    
+  <fieldset>
+    <legend>FAQs:</legend>
+    <button type="button" class="collapsible">Entry and health requirements!</button>
+    <div class="content">
+      <p >Find out more about the latest information on travel documents and visa requirements, plus local government COVID-19 vaccination and quarantine policies here. Destination-specific general vaccination requirements can be found under the Medical and Health Information of each trip’s Essential Trip Information. 
+        </p>
+    </div>
+
+    <button type="button" class="collapsible">How safe are my belongings whilst on the trip?</button>
+    <div class="content">
+      <p>While we take all the precautions we can to make sure your belongings are safe, we are travelling to some exciting destinations that are sometimes home to some pretty skilled thieves. Travel insurance is a must and a lockable bag or money belt will always help too.</p>
+    </div>
+
+    <button type="button" class="collapsible">What type of luggage do you recommend I take? </button>
+    <div class="content">
+      <p >On most Intrepid trips you will be required to carry your own luggage, sometimes upstairs and on and off transport. We therefore recommend you travel with a backpack. For a full list of what to take on your adventure see our Ultimate Packing List.</p>
+    </div>
+
+    <button type="button" class="collapsible">What essential documents do I need to take?</button>
+    <div class="content">
+      <p >It’s important that you always travel with your current passport, visas, travel insurance and Intrepid documentation. For more information see our Ultimate Packing List. </p>
+    </div>
+
+    <button type="button" class="collapsible">What type of ground transportation is used?</button>
+    <div class="content">
+      <p >If it moves there’s a good chance you’ll be riding on it. The type of transport used depends on your trip style. Find out more about trip styles or see your Essential Trip Information for the specific type of transportation used on your journey. </p>
+    </div>
+
+    <button type="button" class="collapsible">What happens if someone on trip shows covid 19 symptoms?</button>
+    <div class="content">
+      <p >If a traveller tests positive for COVID-19 and wishes to continue on their trip, they will be required to take additional precautionary measures to prevent transmission, including wearing a mask when in close contact with others.
+
+        Intrepid will always follow local COVID-19 regulations and protocols where these are stricter than our own. </p>
+    </div>
+
+
+    
+
+    <button type="button" class="collapsible">How to get latest updates regarding the travelling destinations and for seeking further info?</button>
+    <div class="content">
+      <p >Follow our social media handles, and can contact us on the contact information provided below</p>
+    </div>
+
+
+  </fieldset>
+</div>
+<hr>
+<!-- <div id="foot">
+ <h3> FOLLOW US ON:</h3>
+</div> -->
+
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Add font awesome icons -->
+<!-- <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-whatsapp"></a>
+<a href="#" class="fa fa-instagram"></a> -->
+<hr> 
+
+<div id="foot">
+  <div class="footitem">
+    <h3>CONTACT DETAILS:</h3>
+    <p>0261-3651822-23-24</p>
+    <p>www.gripthetrip@gmail.com</p>
+    <p>A-201, Atlanta Complex, Vesu, Surat</p>
+    <p>Mon-Sat 9:00 am to 6:00pm</p>
+  </div>
+
+  <div class="footitem">
+    <h3>COMPANY:</h3>
+    <p><a class="company" href="file:///C:/Users/vishwa/AppData/Local/Microsoft/Windows/INetCache/IE/L1FQ0X73/customer_review_form_hotel[2].html" >Privacy Policy</a></p>
+    <p><a class="company" href="file:///C:/Users/vishwa/AppData/Local/Microsoft/Windows/INetCache/IE/L1FQ0X73/customer_review_form_hotel[2].html" >Blog</a></p>
+    <p><a class="company" href="file:///C:/Users/vishwa/AppData/Local/Microsoft/Windows/INetCache/IE/L1FQ0X73/customer_review_form_hotel[2].html" >About us</a></p>
+    <p><a class="company" href="file:///C:/Users/vishwa/AppData/Local/Microsoft/Windows/INetCache/IE/L1FQ0X73/customer_review_form_hotel[2].html" >Advertising Agencies</a></p>
+  </div>
+
+  <div class="footitem">
+    <h3>SOCIAL SHARE:</h3>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Add font awesome icons -->
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-whatsapp"></a>
+    <a href="#" class="fa fa-instagram"></a>
+  </div>
+
+  
+
+</div>
+
+</body>
+</html>
+<script>
+
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+</script>
+<!-- 
+
+
+<div class="col-lg-4 col-md-12 col-sm-12">
+
+  <h3 class="mbr-text mbr-bold mbr-fonts-style group-title display-7">Contacts</h3>
+
+  <div class="mbr-row items mbr-white">
+      
+
+
+
+      
+      
+
+  <div class="list-item mbr-col-lg-12 mbr-col-md-12 mbr-col-sm-12">
+          <span class="mbr-iconfont listico mbri-tablet-vertical" style="color: rgb(255, 255, 255);"></span>
+          <h5 class="mbr-fonts-style text2 display-4">123-456-78901</h5>
+      </div><div class="list-item mbr-col-lg-12 mbr-col-md-12 mbr-col-sm-12">
+          <span class="mbr-iconfont listico mbri-pin" style="color: rgb(255, 255, 255);"></span>
+          <h5 class="mbr-fonts-style text2 display-4">London, 51 Street, 43</h5>
+      </div><div class="list-item mbr-col-lg-12 mbr-col-md-12 mbr-col-sm-12">
+          <span class="mbr-iconfont listico mbri-clock" style="color: rgb(255, 255, 255);"></span>
+          <h5 class="mbr-fonts-style text2 display-4">Mon - Sat 8.00 - 18.00</h5>
+      </div></div> -->
+
+
+
+  <!-- <div class="social-list py-4">
+      <div class="soc-item">
+          <a href="https://twitter.com/mobirise" target="_blank">
+              <div class="mbr-iconfont mbr-iconfont-social socicon-twitter socicon" style="color: rgb(0, 0, 0);" media-simple="true"></div>
+          </a>
+      </div>
+      <div class="soc-item">
+          <a href="https://www.facebook.com/pages/Mobirise/1616226671953247" target="_blank">
+              <div class="mbr-iconfont mbr-iconfont-social socicon-facebook socicon" style="color: rgb(0, 0, 0);" media-simple="true"></div>
+          </a>
+      </div>
+      <div class="soc-item">
+          <a href="https://plus.google.com/u/0/+Mobirise" target="_blank">
+              <div class="mbr-iconfont mbr-iconfont-social socicon-googleplus socicon" style="color: rgb(1, 1, 1);" media-simple="true"></div>
+          </a>
+      </div>
+      <div class="soc-item">
+          <a href="https://instagram.com/mobirise" target="_blank">
+              <div class="mbr-iconfont mbr-iconfont-social socicon-skype socicon" style="color: rgb(0, 0, 0);" media-simple="true"></div>
+          </a>
+      </div>
+      <div class="soc-item">
+          <a href="https://instagram.com/mobirise" target="_blank">
+              <div class="mbr-iconfont mbr-iconfont-social socicon-instagram socicon" style="color: rgb(3, 3, 3);" media-simple="true"></div>
+          </a>
+      </div>
+      
+  </div> -->
+
+
+<!-- </div> -->
+
+<!-- Add icon library -->

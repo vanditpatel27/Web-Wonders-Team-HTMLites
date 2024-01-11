@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+  <head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>
+    Jammu and Kashmir
+  </title>
+  <link rel="stylesheet" href="./Venice_upd_files/css">
+  <link rel="stylesheet" href="./Venice_upd_files/css(1)">
+</head>
+<body>
+  <style>
+    body {
+        font-family: "Audiowide", sans-serif;
+        background-image: url("https://cdn.hovia.com/app/uploads/blue-abstract-vector-world-map-wallpaper-mural-Plain-820x532.jpg");
+        
+      }
+    nav {
+            display: flex;
+            align-items: center ;
+            justify-content: center;
+            position: relative;
+          }
+          
+          ul {
+            list-style-type: none;
+            display: flex;
+          }
+          
+          li {
+            list-style: none;
+            font-size: 1.3em;
+          }
+          #navbar::before{
+            content: "";
+            background-color: black;
+            position: relative;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+          
+          a {
+            color:darkgreen;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+          }
+          
+          a:hover {
+            background-color: rgba(59, 236, 252, 0.489);
+            text-decoration: none;
+          }
+
+      .jk1{
+        text-align: left;
+        margin-left: 400px !important;
+        margin-top: 20px;
+        color: yellow !important;
+        font-size: 64px;
+      }
+      .jk2{
+        text-align: center;
+        font-size: 48px;
+      }
+
+        table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      td {
+        border: 2px;
+        padding: 0px;
+        height: 50px;
+      }
+
+      .full-height {
+        grid-row: span 2;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .hov{
+        position: relative;
+        display: inline-block;
+      }
+
+      .hov img{
+          opacity:1;
+          display: block;
+          width: 100%;
+          height: auto;
+      }
+
+      .hov img:hover{
+        opacity:0.5;
+      } 
+
+      .hov .image-text {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: purple ;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+        margin-top: 10px;
+
+      }
+      .image-text h2 {
+        margin: 0;
+        color: crimson;
+      }
+      
+      .slider {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+      }
+
+      .slider-wrapper,.slider-wrapper2,.slider-wrapper3,.slider-wrapper4 {
+        position: relative; /* Update position to relative */
+        display: flex;
+        transition: transform 0.5s ease;
+      }
+
+      .slide,.slide2,.slide3,.slide4 {
+        flex: 0 0 calc(33.33% - 10px);
+        max-width: 33.33%;
+        transition: opacity 0.5s ease;
+        position: relative; /* Update position to relative */
+        text-align:center; 
+        margin-bottom: 20px;
+      }
+
+      .slide img,.slide2 img,.slide3 img ,.slide4 img {
+        display: block;
+        width: 300px; /* Set the desired width */
+        height: 200px; /* Set the desired height */
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      .controls {
+        position:absolute;
+        top: 50%;
+        left: -10px;
+        transform: translateY(-50%);
+        display: flex;
+        z-index: 1; /* Ensure buttons appear above images */
+      }
+
+      .prev-btn,
+      .next-btn,.prev-btn2,.next-btn2,.prev-btn3,.next-btn3,.next-btn4,.prev-btn4 {
+        border: none;
+        background: transparent;
+        font-size: 120px;
+        color: aqua;
+        padding: 10px;
+        cursor: pointer;
+        outline: none;
+      }
+
+      .prev-btn,.prev-btn2,.prev-btn3,.prev-btn4 {
+        margin-right: 10px;
+        align-items:left;
+        
+      }
+
+      .next-btn,.next-btn2,.next-btn3,.next-btn4 {
+        margin-left: 1130px;
+        align-items: right;
+      }
+
+      .transport{
+        text-align: center;
+        color: orange !important;
+        font-size: 36px ;
+      }
+      .transport-section {
+      padding: 20px;
+      background-color: khaki;
+    }
+
+    .transport-card {
+        border: 1px solid brown;
+        background-color: lightgray;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .transport-card img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-right: 20px;
+    }
+
+    .transport-card .details {
+      flex-grow: 1;
+    }
+
+    .transport-card h2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-style: normal;
+        color: black;
+    }
+
+    .transport-card p {
+        margin: 0;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 300;
+        font-style: oblique;
+        color: black;
+        
+      }
+      p{
+      font-size: large;
+      font-weight: normal;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: firebrick;
+      }
+      h1{
+          font-family:'Times New Roman', Times, serif;
+          font-size: larger;
+          font-weight: bolder;
+          font-variant: normal ;
+          font-kerning: normal;
+          font-variant-east-asian: normal;
+          color: rgb(2, 0, 52);
+      }
+      h2{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: medium;
+      font-weight: bold;
+      color: rgb(5, 0, 143);
+      }
+
+  </style>
+  <div>
+  <p class="jk1"><h1 class="jk2">Jammu and Kashmir</h1> </p>  
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#hotels">HOTEL ROOMS/ACCOMODATION</a></li>
+      <li><a href="#transport">TRANSPORT</a></li>
+      <li><a href="#restaurants">RESTAURANTS</a></li>
+      <li><a href="#thingstodo">THINGS TO DO</a></li>
+      <li><a href="#dest">POPULAR DESTINATIONS</a></li>
+    </ul>
+  </nav>
+
+  <table>
+    <tr>
+      <td rowspan="2" class="full-height">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/fe/12/a9/welcome-friends.jpg?w=800&h=600&s=1" alt="Image 1">
+      </td>
+      <td>
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/4e/2c/34/kashmir-valley.jpg?w=700&h=600&s=1" alt="Image 2">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/62/14/64/the-indus-rivernear-alchi.jpg?w=800&h=600&s=1" alt="Image 3">
+      </td>
+    </tr>
+  </table>
+
+  <div class="slider" id="hotels">
+    <div class="container">
+      <div class="text">
+        <h1>Stay</h1>
+        <p>Indulge in Opulence: Experience the Epitome of Luxury at Our Hotels</p>
+        <p>
+          <a class="UikNM _G B- _S _T c G_ y bYExr xARtZ wnNQG" href="https://www.tripadvisor.in/Hotels-g297619-Jammu_and_Kashmir-Hotels.html">See all</a>
+        </p>
+      </div>
+    <div class="slider-wrapper">
+      <div class="slide">
+        <a href="https://www.booking.com/hotel/in/mirage-srinagar.en-gb.html?aid=306395&label=srinagar-o3VAs%2AZuc4WyvaO42IZn6ASM110121645629%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-1110454565467%3Akwd-298779522430%3Alp9062203%3Ali%3Adem%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH02-pWD53qm9c&sid=b69b375650e51d196c430d2468a1ff60&dest_id=-2111972;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1689339499;srpvid=17c85b3401730142;type=total;ucfs=1&">
+          <div class="hov">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/460894816.jpg?k=61f4456e3f665263dc5c0a7c411d2139ad1e8ffb778cd93d7f97b5287fd42a48&o=&hp=1" alt="Hotel Mirage">
+          </div>
+          <div>
+            <h2>Hotel Mirage</h2>
+          </div>
+        </a>
+      </div>
+      <div class="slide">
+        <a href="https://www.booking.com/hotel/in/blooming-dale.en-gb.html?aid=306395&label=srinagar-o3VAs%2AZuc4WyvaO42IZn6ASM392742920147%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-1110454565467%3Akwd-298779522430%3Alp9062203%3Ali%3Adem%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH02-pWD53qm9c&sid=b69b375650e51d196c430d2468a1ff60&dest_id=-2111972;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1689339579;srpvid=e0265b5c5b1b00fa;type=total;ucfs=1&">
+          <div class="hov">
+          <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/54716473.jpg?k=71da11e0505ec2785aad8c8a504435dd8bc5bcbcf4090a6d4fd57567068ecb45&o=&hp=1" alt="Blooming Dale Hotel">
+          </div>
+          <div>
+          <h2>Blooming Dale Hotel</h2>
+        </div>
+        </a>
+      </div>
+      <div class="slide">
+        <a href="https://www.booking.com/hotel/in/green-rooms-srinagar.en-gb.html?aid=306395&label=srinagar-o3VAs%2AZuc4WyvaO42IZn6ASM392742920147%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-1110454565467%3Akwd-298779522430%3Alp9062203%3Ali%3Adem%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH02-pWD53qm9c&sid=b69b375650e51d196c430d2468a1ff60&dest_id=-2111972;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=8;hpos=8;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1689339607;srpvid=4d535b6a6abb0003;type=total;ucfs=1&">
+          <div class="hov">
+          <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/433971669.jpg?k=0b8b5d21dcd1836af418a017b4c8ebe16dca6479b699ee24003863c85b40904f&o=&hp=1" alt="Hotel Green Rooms ">
+          </div>
+          <div>
+          <h2>Hotel Green Rooms </h2>
+        </div>
+        </a>
+      </div>
+      <div class="slide">
+        <a href="https://www.tripadvisor.in/Hotel_Review-g297621-d7699381-Reviews-Lemon_Tree_Hotel_Katra-Katra_Reasi_District_Jammu_Jammu_and_Kashmir.html">
+          <div class="hov">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/50/aa/40/lemon-tree-hotel-katra.jpg?w=1400&h=-1&s=1" alt="Lemon Tree Hotel">
+        <div><h2>Lemon Tree Hotel </h2></div>
+      </div>
+    </a></div>
+      <div class="slide">
+        <a href="https://www.tripadvisor.in/Hotel_Review-g665884-d23777002-Reviews-Radisson_Golf_Resort_Pahalgam-Pahalgam_Anantnag_District_Kashmir_Jammu_and_Kashmir.html">
+          <div class="hov">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/0a/6a/54/radisson-golf-resort.jpg?w=1400&h=-1&s=1" alt="Radisson Golf Resort">
+        <div><h2>Radisson Golf Resort </h2></div>
+        </div></a>
+      </div>
+      <div class="slide">
+        <a href="https://www.tripadvisor.in/Hotel_Review-g297623-d299122-Reviews-The_Lalit_Grand_Palace_Srinagar-Srinagar_Srinagar_District_Kashmir_Jammu_and_Kashmir.html">
+          <div class="hov">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/fd/14/6b/the-lalit-grand-palace.jpg?w=1400&h=-1&s=1" alt="The Lalit Grand Palace">
+        <div><h2>The Lalit Grand Palace </h2></div>
+        </div></a>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="prev-btn">&#8249;</button>
+      <button class="next-btn">&#8250;</button>
+    </div>
+    </div>
+  </div>
+
+  <div class="slider" id="thingstodo">
+    <div class="container">
+      <div class="text">
+        <h1>Popular things to do</h1>
+        <p>Places to see, ways to wander, and signature experiences.</p>
+        <p>
+          <a class="UikNM _G B- _S _T c G_ y bYExr xARtZ wnNQG" href="https://www.tripadvisor.in/Attractions-g297619-Activities-Jammu_and_Kashmir.html">See all</a>
+        </p>
+      </div>
+    <div class="slider-wrapper2">
+      <div class="slide2">
+        <a href="https://www.tripadvisor.in/Attraction_Review-g297623-d2437492-Reviews-Dal_Lake-Srinagar_Srinagar_District_Kashmir_Jammu_and_Kashmir.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/68/2b/0f/merkmal-des-dal-sees.jpg?w=1400&h=-1&s=1" alt="Dal Lake">
+          </div>
+          <div>
+            <h2>Dal Lake</h2>
+          </div>
+        </a>
+      </div>
+      <div class="slide2">
+        <a href="https://www.tripadvisor.in/Attraction_Review-g665884-d6612088-Reviews-Aru_Valley-Pahalgam_Anantnag_District_Kashmir_Jammu_and_Kashmir.html">
+          <div class="hov">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/ec/dc/15/aru-city.jpg?w=1100&h=-1&s=1" alt="Aru Valley">
+          </div>
+          <div>
+          <h2>Aru Valley</h2>
+        </div>
+        </a>
+      </div>
+      <div class="slide2">
+        <a href="https://www.tripadvisor.in/Attraction_Review-g297621-d15046211-Reviews-Vaishno_Devi-Katra_Reasi_District_Jammu_Jammu_and_Kashmir.html">
+          <div class="hov">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/ff/2e/d5/img-20190323-164218-largejpg.jpg?w=900&h=-1&s=1" alt="Vaishno Devi ">
+          </div>
+          <div>
+          <h2>Vaishno Devi </h2>
+        </div>
+        </a>
+      </div>
+      <div class="slide2">
+        <a href="https://www.tripadvisor.in/Attraction_Review-g1152719-d6027591-Reviews-Nathatop-Patnitop_Udhampur_District_Jammu_Jammu_and_Kashmir.html">
+          <div class="hov">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/60/da/01/20170207-124750-largejpg.jpg?w=2400&h=-1&s=1" alt="Nathatop">
+        <div><h2>Nathatop</h2></div>
+      </div>
+    </a></div>
+      <div class="slide2">
+        <a href="https://www.tripadvisor.in/Attraction_Review-g317095-d2229453-Reviews-Gulmarg_Gondola-Gulmarg_Baramulla_District_Kashmir_Jammu_and_Kashmir.html">
+          <div class="hov">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/3e/ae/11/dscn7159-largejpg.jpg?w=1200&h=-1&s=1" alt="Gulmarg Gondola">
+        <div><h2>Gulmarg Gondola </h2></div>
+        </div></a>
+      </div>
+      <div class="slide2">
+        <a href="https://www.tripadvisor.in/Attraction_Review-g2282345-d3682486-Reviews-Zojila_Pass-Sonamarg_Ganderbal_District_Kashmir_Jammu_and_Kashmir.html">
+          <div class="hov">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/74/21/21/photo1jpg.jpg?w=1600&h=-1&s=1" alt="Zojila Pass">
+        <div><h2>Zojila Pass </h2></div>
+        </div></a>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="prev-btn2">&#8249;</button>
+      <button class="next-btn2">&#8250;</button>
+    </div>
+    </div>
+  </div>
+
+  <div class="slider" id="restaurants">
+    <div class="container">
+      <div class="text">
+        <h1>Eat</h1>
+        <p>Quintessential bistros, restaurants, and beyond.</p>
+        <p>
+          <a class="UikNM _G B- _S _T c G_ y bYExr xARtZ wnNQG" href="https://www.tripadvisor.in/Restaurants-g297622-Kashmir_Jammu_and_Kashmir.html">See all</a>
+        </p>
+      </div>
+    <div class="slider-wrapper3">
+      <div class="slide3">
+        <a href="https://www.tripadvisor.in/Restaurant_Review-g297623-d3222569-Reviews-Stream_Restaurant-Srinagar_Srinagar_District_Kashmir_Jammu_and_Kashmir.html">
+          <div class="hov">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/dd/2b/44/exotic-outside-view.jpg" alt="Stream Restaurant">
+          </div>
+          <div>
+            <h2>Stream Restaurant</h2>
+          </div>
+        </a>
+      </div>
+      <div class="slide3">
+        <a href="https://www.tripadvisor.in/Restaurant_Review-g3209017-d23728803-Reviews-Eleven_Miles_The_Cafe_And_Grill-Tangmarg_Baramulla_District_Kashmir_Jammu_and_K.html">
+          <div class="hov">
+          <img src="https://media-cdn.tripadvisor.com/media/photo-p/21/c8/f0/1f/eleven-miles-reading.jpg" alt="Eleven Miles The Cafe And Grill">
+          </div>
+          <div>
+          <h2>Eleven Miles The Cafe And Grill</h2>
+        </div>
+        </a>
+      </div>
+      <div class="slide3">
+        <a href="https://www.tripadvisor.in/Restaurant_Review-g297623-d8072192-Reviews-Lacima_cafe_and_pizzeria-Srinagar_Srinagar_District_Kashmir_Jammu_and_Kashmir.html">
+          <div class="hov">
+          <img src="https://media-cdn.tripadvisor.com/media/photo-s/12/6b/1f/88/img-20180301-165344-largejpg.jpg" alt="Lacima cafe and pizzeria">
+          </div>
+          <div>
+          <h2>Lacima cafe and pizzeria</h2>
+        </div>
+        </a>
+      </div>
+      <div class="slide3">
+        <a href="https://www.tripadvisor.in/Restaurant_Review-g297623-d4553002-Reviews-Niramish-Srinagar_Srinagar_District_Kashmir_Jammu_and_Kashmir.html">
+          <div class="hov">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/9e/45/90/niramish.jpg" alt="Niramish">
+        <div><h2>Niramish</h2></div>
+      </div>
+    </a></div>
+      <div class="slide3">
+        <a href="https://www.tripadvisor.in/Restaurant_Review-g297623-d1826623-Reviews-Ahdoos-Srinagar_Srinagar_District_Kashmir_Jammu_and_Kashmir.html">
+          <div class="hov">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-p/14/c8/2c/7a/photo0jpg.jpg" alt="Ahdoos">
+        <div><h2>Ahdoos</h2></div>
+        </div></a>
+      </div>
+      <div class="slide3">
+        <a href="https://www.tripadvisor.in/Restaurant_Review-g297623-d5998025-Reviews-The_Chinar_at_The_LaLiT_Grand_Palace_Srinagar-Srinagar_Srinagar_District_Kashmir_.html">
+          <div class="hov">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/08/b6/6c/5d/the-chinar-at-the-lalit.jpg" alt="The Chinar at The LaLiT Grand Palace">
+        <div><h2>The Chinar at The LaLiT Grand Palace</h2></div>
+        </div></a>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="prev-btn3">&#8249;</button>
+      <button class="next-btn3">&#8250;</button>
+    </div>
+    </div>
+  </div>
+
+  <div class="slider" id="dest">
+    <div class="container">
+      <div class="text">
+        <h1>Destinations</h1>
+      </div>
+    <div class="slider-wrapper4">
+      <div class="slide4">
+        <a href="https://www.tripadvisor.in/Tourism-g297623-Srinagar_Srinagar_District_Kashmir_Jammu_and_Kashmir-Vacations.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/41/be/c4/beautiful.jpg?w=600&h=600&s=1" alt="Srinagar">
+            <div class="image-text">
+            <h2>Srinagar</h2>
+          </div></div>
+        </a>
+      </div>
+      <div class="slide4">
+        <a href="https://www.tripadvisor.in/Tourism-g665884-Pahalgam_Anantnag_District_Kashmir_Jammu_and_Kashmir-Vacations.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/39/20/78/living-on-earth-is-expensive.jpg?w=600&h=600&s=1" alt="Pahalgam">
+            <div class="image-text">
+            <h2>Pahalgam</h2>
+          </div></div>
+        </a>
+      </div>
+      <div class="slide4">
+        <a href="https://www.tripadvisor.in/Tourism-g317095-Gulmarg_Baramulla_District_Kashmir_Jammu_and_Kashmir-Vacations.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/e2/6c/ff/the-view-of-gulmarg.jpg?w=800&h=600&s=1" alt="Gulmarg" height="400px">
+            <div class="image-text">
+            <h2>Gulmarg</h2>
+          </div></div>
+        </a>
+      </div>
+      <div class="slide4">
+        <a href="https://www.tripadvisor.in/Tourism-g2282345-Sonamarg_Ganderbal_District_Kashmir_Jammu_and_Kashmir-Vacations.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/41/be/c4/beautiful.jpg?w=600&h=600&s=1" alt="Sonamarg">
+            <div class="image-text">
+            <h2>Sonamarg</h2>
+          </div></div>
+        </a>
+      </div>
+      <div class="slide4">
+        <a href="https://www.tripadvisor.in/Tourism-g681262-Harwan_Srinagar_District_Kashmir_Jammu_and_Kashmir-Vacations.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/d6/fb/fe/cherrytree-resort-a-perfect.jpg?w=1000&h=700&s=1" alt="Harwan">
+            <div class="image-text">
+            <h2>Harwan</h2>
+          </div></div>
+        </a>
+      </div>
+      <div class="slide4">
+        <a href="https://www.tripadvisor.in/Tourism-g1891000-Anantnag_Anantnag_District_Kashmir_Jammu_and_Kashmir-Vacations.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/78/eb/eb/amarnath-cave.jpg?w=1400&h=900&s=1" alt="Anantnag">
+            <div class="image-text">
+            <h2>Anantnag</h2>
+          </div></div>
+        </a>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="prev-btn4">&#8249;</button>
+      <button class="next-btn4">&#8250;</button>
+    </div>
+    </div>
+  </div>
+
+  <section class="transport-section" id="transport">
+  <h1 class="transport">Transport</h1>
+    <div class="transport-card">
+      <img src="https://cdn.pixabay.com/photo/2016/02/13/13/11/oldtimer-1197800_640.jpg" alt="Car">
+      <div class="details">
+        <h1 style="color: black;">Rent a Car</h1>
+        <p>Explore the destinations in jammu-kashmir at your own pace with our car rental services.</p>
+        <a href="https://www.justdial.com/Jammu/Car-Rental/nct-10076456" class="btn">Learn More</a>
+      </div>
+    </div>
+
+    <div class="transport-card">
+      <img src="https://www.millenniumpost.in/h-upload/2023/01/13/663806-dbe3f629ed.webp" alt="Flight">
+      <div class="details">
+        <h1 style="color: black;">Book Flights</h1>
+        <p>Find and book flights to Jammu and Kashmir with competitive fares.</p>
+        <a href="https://www.expedia.co.in/Destinations-In-Jammu-And-Kashmir.d6049934.Flight-Destinations" class="btn">Learn More</a>
+      </div>
+    </div>
+
+    <div class="transport-card">
+      <img src="https://www.tourmyindia.com/states/jammu-kashmir/image/by-train-jammu-kashmir.png" alt="Train">
+      <div class="details">
+        <h1 style="color: black;">Train Tickets</h1>
+        <p>Travel conveniently by booking train tickets for your preferred routes.</p>
+        <a href="https://www.tourmyindia.com/states/jammu-kashmir/travel-by-train.html" class="btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+  const slider = document.querySelector('.slider');
+
+  const sliderWrapper = document.querySelector('.slider-wrapper');
+  const sliderWrapper2 = document.querySelector('.slider-wrapper2');
+  const sliderWrapper3 = document.querySelector('.slider-wrapper3');
+  const sliderWrapper4 = document.querySelector('.slider-wrapper4');
+
+
+  const slides = document.querySelectorAll('.slide');
+  const slides2 = document.querySelectorAll('.slide2');  
+  const slides3 = document.querySelectorAll('.slide3');
+  const slides4 = document.querySelectorAll('.slide4');
+
+
+
+  const prevBtn = document.querySelector('.prev-btn');
+  const prevBtn2 = document.querySelector('.prev-btn2');
+  const prevBtn3 = document.querySelector('.prev-btn3');
+  const prevBtn4 = document.querySelector('.prev-btn4');
+
+
+  const nextBtn = document.querySelector('.next-btn');
+  const nextBtn2 = document.querySelector('.next-btn2');
+  const nextBtn3 = document.querySelector('.next-btn3');
+  const nextBtn4 = document.querySelector('.next-btn4');
+
+
+
+  let currentIndex = 0;
+  const slideWidth = slides[0].clientWidth;
+  const slidesPerPage = 3;
+
+  prevBtn.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex -= slidesPerPage;
+      if (currentIndex < 0) {
+        currentIndex = 0;
+      }
+      sliderWrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+  prevBtn2.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex -= slidesPerPage;
+      if (currentIndex < 0) {
+        currentIndex = 0;
+      }
+      sliderWrapper2.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+  prevBtn3.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex -= slidesPerPage;
+      if (currentIndex < 0) {
+        currentIndex = 0;
+      }
+      sliderWrapper3.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+  prevBtn4.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex -= slidesPerPage;
+      if (currentIndex < 0) {
+        currentIndex = 0;
+      }
+      sliderWrapper4.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+
+  nextBtn.addEventListener('click', () => {
+    if (currentIndex < slides.length - slidesPerPage) {
+      currentIndex += slidesPerPage;
+      sliderWrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+  nextBtn2.addEventListener('click', () => {
+    if (currentIndex < slides2.length - slidesPerPage) {
+      currentIndex += slidesPerPage;
+      sliderWrapper2.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+  nextBtn3.addEventListener('click', () => {
+    if (currentIndex < slides3.length - slidesPerPage) {
+      currentIndex += slidesPerPage;
+      sliderWrapper3.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });  
+  nextBtn4.addEventListener('click', () => {
+    if (currentIndex < slides4.length - slidesPerPage) {
+      currentIndex += slidesPerPage;
+      sliderWrapper4.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+  </script>
+</body>
+</html>

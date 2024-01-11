@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>
+    Venice
+  </title>
+  <link rel="stylesheet" href="./Venice_upd_files/css">
+  <link rel="stylesheet" href="./Venice_upd_files/css(1)">
+</head>
+<body>
+  <style>
+    body {
+        font-family: "Audiowide", sans-serif;
+        background-image: url("https://cdn.hovia.com/app/uploads/blue-abstract-vector-world-map-wallpaper-mural-Plain-820x532.jpg");
+        
+      }
+    nav {
+            display: flex;
+            align-items: center ;
+            justify-content: center;
+            position: relative;
+          }
+          
+          ul {
+            list-style-type: none;
+            display: flex;
+          }
+          
+          li {
+            list-style: none;
+            font-size: 1.3em;
+          }
+          #navbar::before{
+            content: "";
+            background-color: black;
+            position: relative;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+          
+          a {
+            color:darkgreen;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+          }
+          
+          a:hover {
+            background-color: rgba(59, 236, 252, 0.489);
+            text-decoration: none;
+          }
+
+      .v1{
+        text-align: left;
+        margin-left: 400px !important;
+        margin-top: 20px;
+        color: yellow !important;
+        font-size: 64px;
+      }
+      .v2{
+        text-align: center;
+        font-size: 48px;
+      }
+
+        table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      td {
+        border: 2px;
+        padding: 0px;
+        height: 50px;
+      }
+
+      .full-height {
+        grid-row: span 2;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .hov{
+        position: relative;
+        display: inline-block;
+      }
+
+      .hov img{
+          opacity:1;
+          display: block;
+          width: 100%;
+          height: auto;
+      }
+
+      .hov img:hover{
+        opacity:0.5;
+      } 
+
+      .hov .image-text {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: purple ;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+        margin-top: 10px;
+
+      }
+      .image-text h2 {
+        margin: 0;
+        color: crimson;
+      }
+      
+      .slider {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+      }
+
+      .slider-wrapper,.slider-wrapper2,.slider-wrapper3,.slider-wrapper4 {
+        position: relative; /* Update position to relative */
+        display: flex;
+        transition: transform 0.5s ease;
+      }
+
+      .slide,.slide2,.slide3,.slide4 {
+        flex: 0 0 calc(33.33% - 10px);
+        max-width: 33.33%;
+        transition: opacity 0.5s ease;
+        position: relative; /* Update position to relative */
+        text-align:center; 
+        margin-bottom: 20px;
+      }
+
+      .slide img,.slide2 img,.slide3 img ,.slide4 img {
+        display: block;
+        width: 300px; /* Set the desired width */
+        height: 200px; /* Set the desired height */
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      .controls {
+        position:absolute;
+        top: 50%;
+        left: -10px;
+        transform: translateY(-50%);
+        display: flex;
+        z-index: 1; /* Ensure buttons appear above images */
+      }
+
+      .prev-btn,
+      .next-btn,.prev-btn2,.next-btn2,.prev-btn3,.next-btn3,.next-btn4,.prev-btn4 {
+        border: none;
+        background: transparent;
+        font-size: 120px;
+        color: aqua;
+        padding: 10px;
+        cursor: pointer;
+        outline: none;
+      }
+
+      .prev-btn,.prev-btn2,.prev-btn3,.prev-btn4 {
+        margin-right: 10px;
+        align-items:left;
+        
+      }
+
+      .next-btn,.next-btn2,.next-btn3,.next-btn4 {
+        margin-left: 1130px;
+        align-items: right;
+      }
+
+      .transport{
+        text-align: center;
+        color: orange !important;
+        font-size: 36px ;
+      }
+      .transport-section {
+      padding: 20px;
+      background-color: khaki;
+    }
+
+    .transport-card {
+        border: 1px solid brown;
+        background-color: lightgray;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .transport-card img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-right: 20px;
+    }
+
+    .transport-card .details {
+      flex-grow: 1;
+    }
+
+    .transport-card h2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-style: normal;
+        color: black;
+    }
+
+    .transport-card p {
+        margin: 0;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 300;
+        font-style: oblique;
+        color: black;
+        
+      }
+      p{
+      font-size: large;
+      font-weight: normal;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: firebrick;
+      }
+      h1{
+          font-family:'Times New Roman', Times, serif;
+          font-size: larger;
+          font-weight: bolder;
+          font-variant: normal ;
+          font-kerning: normal;
+          font-variant-east-asian: normal;
+          color: rgb(2, 0, 52);
+      }
+      h2{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: medium;
+      font-weight: bold;
+      color: rgb(5, 0, 143);
+      }
+
+  </style>
+  <div>
+  <p class="v1"><h1 class="v2">Venice</h1></p>  
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#hotels">HOTEL ROOMS/ACCOMODATION</a></li>
+      <li><a href="#transport">TRANSPORT</a></li>
+      <li><a href="#restaurants">RESTAURANTS</a></li>
+      <li><a href="#thingstodo">THINGS TO DO</a></li>
+      <li><a href="#dest">POPULAR DESTINATIONS</a></li>
+    </ul>
+  </nav>
+
+  <table>
+    <tbody><tr>
+      <td rowspan="2" class="full-height">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/34/dd/28/photo1jpg.jpg?w=1200&h=-1&s=1" alt="Image 1">
+      </td>
+      <td>
+        <img src="https://images.unsplash.com/photo-1558271736-cd043ef2e855?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmVuaWNlfGVufDB8fDB8fHww&w=1000&q=80" alt="Image 2">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFFzIsMZypNRhe4M0LF8AQNeNa_yLwtuVdjg&usqp=CAU" alt="Image 3">
+      </td>
+    </tr>
+  </tbody></table>
+
+  <div class="slider" id="hotels">
+    <div class="container">
+      <div class="text">
+        <h1>Stay</h1>
+        <p>Indulge in Opulence: Experience the Epitome of Luxury at Our Hotels</p>
+        <p>
+          <a class="UikNM _G B- _S _T c G_ y bYExr xARtZ wnNQG" href="https://www.tripadvisor.in/Search?q=venice&searchSessionId=001bf053a5bfd608.ssid&searchNearby=false&geo=187870&sid=A03B00E7E43B31609477A1A01318F6C61689672938986&blockRedirect=true&ssrc=h&rf=1">See all</a>
+        </p>
+      </div>
+    <div class="slider-wrapper">
+      <div class="slide">
+        <a href="https://www.booking.com/hotel/it/bonvecchiati.en-gb.html?aid=306395&label=venice-hb99Hd3Irau5eaCCAFSjdASM388170980800%3Apl%3Ata%3Ap11580%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-324124229%3Alp9062203%3Ali%3Adem%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH02-pWD53qm9c&sid=b69b375650e51d196c430d2468a1ff60&dest_id=-132007;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1689340067;srpvid=eb585c507a570056;type=total;ucfs=1&">
+          <div class="hov">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/37927919.jpg?k=711fb61ff0ae60c663045d1071a382c7dd81817626b17eed7fa00d95eedb39ce&o=&hp=1" alt="Hotel Bonvecchiati">
+          </div>
+          <div>
+            <h2>Hotel Bonvecchiati</h2>
+          </div>
+        </a>
+      </div>
+      <div class="slide">
+        <a href="https://www.booking.com/hotel/it/first-dream-venice.en-gb.html?aid=306395&label=venice-hb99Hd3Irau5eaCCAFSjdASM388170980800%3Apl%3Ata%3Ap11580%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-324124229%3Alp9062203%3Ali%3Adem%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH02-pWD53qm9c&sid=b69b375650e51d196c430d2468a1ff60&dest_id=-132007;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=2;hpos=2;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1689340102;srpvid=931e5c627fec0293;type=total;ucfs=1&">
+          <div class="hov">
+          <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/438783281.jpg?k=b927530b89968fe9b647ee86cc91d3e49edafbdff8c0fc482f9b47f317c08d87&o=&hp=1" alt="Hotel First Dream">
+          </div>
+          <div>
+          <h2> Hotel First Dream</h2>
+        </div>
+        </a>
+      </div>
+      <div class="slide">
+        <a href="https://www.booking.com/hotel/it/locanda-novo.en-gb.html?label=venice-hb99Hd3Irau5eaCCAFSjdASM388170980800%3Apl%3Ata%3Ap11580%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-324124229%3Alp9062203%3Ali%3Adem%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH02-pWD53qm9c&sid=b69b375650e51d196c430d2468a1ff60&aid=306395&ucfs=1&arphpl=1&dest_id=-132007&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=6f535c7a586c02df&srepoch=1689340151&from_sustainable_property_sr=1">
+          <div class="hov">
+          <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/178218341.jpg?k=4b8843c8498c7eae70e9717bf5992d1f75203d374627e510267a52bc83750bb4&o=&hp=1" alt="Hotel Mezzo Pozzo ">
+          </div>
+          <div>
+          <h2>Hotel Mezzo Pozzo</h2>
+        </div>
+        </a>
+      </div>
+      <div class="slide">
+        <a href="https://www.booking.com/searchresults.en-gb.html?aid=306395&label=venice-hb99Hd3Irau5eaCCAFSjdAS525624658211%3Apl%3Ata%3Ap11580%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-146342137030%3Akwd-324124229%3Alp9145951%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH02-pWD53qm9c&sid=bd019f6a02f87c27467f561d80415a4f&dest_id=-132007&dest_type=city&highlighted_hotels=81187&">
+          <div class="hov">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/max200/277916089.jpg?k=cfb0d05ad3c3b31ef8d460b2860db3ab32ec6175e4b315097732f2215b8fdd17&o=&hp=1" alt="Hotel Carlton on the Grand Canal ">
+        <div><h2>Hotel Carlton on the Grand Canal  </h2></div>
+      </div>
+    </a></div>
+      <div class="slide">
+        <a href="https://www.booking.com/hotel/it/centauro.en-gb.html?aid=306395&label=venice-hb99Hd3Irau5eaCCAFSjdAS525624658211%3Apl%3Ata%3Ap11580%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-146342137030%3Akwd-324124229%3Alp9145951%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH02-pWD53qm9c&sid=bd019f6a02f87c27467f561d80415a4f&dest_id=-132007;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=18;hpos=18;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1689497247;srpvid=5ee83dce2373007b;type=total;ucfs=1&#hotelTmpl">
+          <div class="hov">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/ce/8b/7c/breakfast-room--v9873167.jpg?w=1200&h=-1&s=1" alt="Centauro Hotel">
+        <div><h2>Centauro Hotel</h2></div>
+        </div></a>
+      </div>
+      <div class="slide">
+        <a href="https://www.booking.com/hotel/it/torino-venezia.en-gb.html?aid=306395&label=venice-hb99Hd3Irau5eaCCAFSjdAS525624658211%3Apl%3Ata%3Ap11580%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-146342137030%3Akwd-324124229%3Alp9145951%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH02-pWD53qm9c&sid=bd019f6a02f87c27467f561d80415a4f&dest_id=-132007;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=24;hpos=24;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1689497380;srpvid=10193e1187c40052;type=total;ucfs=1&#hotelTmpl">
+          <div class="hov">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/23810535.jpg?k=b7e2ca25e3e66a543fb48573186acb34b963336814725a3239bbdca0248b09d9&o=&hp=1" alt="Hotel Torino">
+        <div><h2>Hotel Torino </h2></div>
+        </div></a>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="prev-btn">&#8249;</button>
+      <button class="next-btn">&#8250;</button>
+    </div>
+    </div>
+  </div>
+
+  <div class="slider" id="thingstodo">
+    <div class="container">
+      <div class="text">
+        <h1>Popular things to do</h1>
+        <p>Places to see, ways to wander, and signature experiences.</p>
+        <p>
+          <a class="UikNM _G B- _S _T c G_ y bYExr xARtZ wnNQG" href="https://www.tripadvisor.in/Search?&q=places%20to%20visit&searchSessionId=0001942361c09d54.ssid&sid=18388848A03948F08CDF616D9D4E7DA71689498143791&blockRedirect=true&ssrc=a&isSingleSearch=true&geo=187870">See all</a>
+        </p>
+      </div>
+    <div class="slider-wrapper2">
+      <div class="slide2">
+        <a href="https://www.tripadvisor.in/Attraction_Review-g187870-d194251-Reviews-Doge_s_Palace-Venice_Veneto.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/62/d4/a6/20160525-134703-largejpg.jpg?w=1000&h=-1&s=1" alt="Doge's Palace">
+          </div>
+          <div>
+            <h2>Doge's Palace</h2>
+          </div>
+        </a>
+      </div>
+      <div class="slide2">
+        <a href="https://www.tripadvisor.in/AttractionProductReview-g187870-d11449780-Murano_Burano_Islands_Guided_Small_Group_Tour_by_Private_Boat-Venice_Veneto.html">
+          <div class="hov">
+          <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/10/28/63/20.jpg" alt="Murano & Burano Islands">
+          </div>
+          <div>
+          <h2>Murano & Burano Islands</h2>
+        </div>
+        </a>
+      </div>
+      <div class="slide2">
+        <a href="https://www.tripadvisor.in/AttractionProductReview-g187870-d11449780-Murano_Burano_Islands_Guided_Small_Group_Tour_by_Private_Boat-Venice_Veneto.html">
+          <div class="hov">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/e1/a4/32/saint-mark-s-basilica.jpg?w=1200&h=-1&s=1" alt="Basilica di San Marco">
+          </div>
+          <div>
+          <h2>Basilica di San Marco</h2>
+        </div>
+        </a>
+      </div>
+      <div class="slide2">
+        <a href="https://www.tripadvisor.in/Attraction_Review-g187870-d2042080-Reviews-San_Lazzaro_degli_Armeni-Venice_Veneto.html">
+          <div class="hov">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/a6/72/20/san-lazzaro-degli-armeni.jpg?w=1200&h=-1&s=1" alt="San Lazzaro degli Armeni">
+        <div><h2>San Lazzaro degli Armeni</h2></div>
+      </div>
+    </a></div>
+      <div class="slide2">
+        <a href="https://www.tripadvisor.in/Attraction_Review-g187870-d196473-Reviews-Peggy_Guggenheim_Collection-Venice_Veneto.html">
+          <div class="hov">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/24/70/04/photo1jpg.jpg?w=1100&h=-1&s=1" alt="Peggy Guggenheim Collection">
+        <div><h2>Peggy Guggenheim Collection</h2></div>
+        </div></a>
+      </div>
+      <div class="slide2">
+        <a href="https://www.tripadvisor.in/Attraction_Review-g187870-d8571065-Reviews-Centro_Storico_di_Venezia-Venice_Veneto.html">
+          <div class="hov">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/45/fb/8f/piazza-san-marco.jpg?w=1200&h=-1&s=1" alt="Centro Storico di Venezia">
+        <div><h2>Centro Storico di Venezia </h2></div>
+        </div></a>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="prev-btn2">&#8249;</button>
+      <button class="next-btn2">&#8250;</button>
+    </div>
+    </div>
+  </div>
+
+  <div class="slider" id="restaurants">
+    <div class="container">
+      <div class="text">
+        <h1>Eat</h1>
+        <p>Quintessential bistros, restaurants, and beyond.</p>
+        <p>
+          <a class="UikNM _G B- _S _T c G_ y bYExr xARtZ wnNQG" href="https://www.tripadvisor.in/Restaurants-g187870-Venice_Veneto.html">See all</a>
+        </p>
+      </div>
+    <div class="slider-wrapper3">
+      <div class="slide3">
+        <a href="https://www.tripadvisor.in/Restaurant_Review-g187870-d19351092-Reviews-RistoPub_Rossini-Venice_Veneto.html">
+          <div class="hov">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-f/1a/60/03/8c/ristopub-rossini-venice.jpg" alt="RistoPub Rossini">
+          </div>
+          <div>
+            <h2>RistoPub Rossini</h2>
+          </div>
+        </a>
+      </div>
+      <div class="slide3">
+        <a href="https://www.tripadvisor.in/Restaurant_Review-g187870-d3258497-Reviews-Crazy_Pizza-Venice_Veneto.html">
+          <div class="hov">
+          <img src="https://media-cdn.tripadvisor.com/media/photo-f/11/58/7c/3f/pizza-with-salami-mushrooms.jpg" alt="Crazy Pizza">
+          </div>
+          <div>
+          <h2>Crazy Pizza</h2>
+        </div>
+        </a>
+      </div>
+      <div class="slide3">
+        <a href="https://www.tripadvisor.in/Restaurant_Review-g187870-d7224041-Reviews-Fried_Land-Venice_Veneto.html">
+          <div class="hov">
+          <img src="https://media-cdn.tripadvisor.com/media/photo-p/11/bc/f0/43/photo0jpg.jpg" alt="Fried Land">
+          </div>
+          <div>
+          <h2>Fried Land</h2>
+        </div>
+        </a>
+      </div>
+      <div class="slide3">
+        <a href="https://www.tripadvisor.in/Restaurant_Review-g187870-d696426-Reviews-Ae_Oche-Venice_Veneto.html">
+          <div class="hov">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/01/e4/a3/05/spaghetti-carbonara.jpg" alt="Ae Oche">
+        <div><h2>Ae Oche</h2></div>
+      </div>
+    </a></div>
+      <div class="slide3">
+        <a href="https://www.tripadvisor.in/Restaurant_Review-g187870-d5263610-Reviews-Bar_Al_Vecio_Calice-Venice_Veneto.html">
+          <div class="hov">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/11/5b/5b/ca/al-vecio-calice.jpg" alt="Bar Al Vecio Calice">
+        <div><h2>Bar Al Vecio Calice</h2></div>
+        </div></a>
+      </div>
+      <div class="slide3">
+        <a href="https://www.tripadvisor.in/Restaurant_Review-g187870-d18543458-Reviews-Gio_s-Venice_Veneto.html">
+          <div class="hov">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/1d/67/66/84/gio-s-terrace.jpg" alt="Gio's">
+        <div><h2>Gio's</h2></div>
+        </div></a>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="prev-btn3">&#8249;</button>
+      <button class="next-btn3">&#8250;</button>
+    </div>
+    </div>
+  </div>
+
+  <div class="slider" id="dest">
+    <div class="container">
+      <div class="text">
+        <h1>Destinations near Venice</h1>
+      </div>
+    <div class="slider-wrapper4">
+      <div class="slide4">
+        <a href="https://www.getyourguide.com/-l558/?cmp=ga&cq_src=google_ads&cq_cmp=15511528799&cq_con=132581184684&cq_term=tuscany&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=15511528799&adgroup_id=132581184684&target_id=kwd-30832201&loc_physical_ms=9145951&match_type=e&ad_id=578833440610&keyword=tuscany&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gclid=Cj0KCQjwqs6lBhCxARIsAG8YcDjD24UkWDKZ2Mwozzbglbw9GDTdHkNZAM9ynKSaM7oj5qwgffTv_pIaAv6eEALw_wcB">
+          <div class="hov">
+            <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2016/01/tuscany-428041_960_720_700x400-400x229.jpg" alt="Tuscany">
+            <div class="image-text">
+            <h2>Tuscany</h2>
+          </div></div>
+        </a>
+      </div>
+      <div class="slide4">
+        <a href="https://www.getyourguide.com/-l33/?cmp=ga&cq_src=google_ads&cq_cmp=15511527287&cq_con=132158662058&cq_term=rome&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=15511527287&adgroup_id=132158662058&target_id=aud-1393039795580:kwd-15045950&loc_physical_ms=9145951&match_type=e&ad_id=578833440601&keyword=rome&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gclid=Cj0KCQjwqs6lBhCxARIsAG8YcDhf75MpwQazPXRvHmXSVU-SGsLlCkKraH6kLQYr2Arc06BFMXDSRtQaArfWEALw_wcB">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/c9/6c/08/caption.jpg?w=700&h=-1&s=1" alt="Rome">
+            <div class="image-text">
+            <h2>Rome</h2>
+          </div></div>
+        </a>
+      </div>
+      <div class="slide4">
+        <a href="https://www.getyourguide.com/-l139/?cmp=ga&cq_src=google_ads&cq_cmp=15511528718&cq_con=132581184364&cq_term=milan&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=15511528718&adgroup_id=132581184364&target_id=aud-1393039795620:kwd-36331481&loc_physical_ms=9145951&match_type=e&ad_id=570506022875&keyword=milan&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gclid=Cj0KCQjwqs6lBhCxARIsAG8YcDh4P5MzsWOsO98s_U-XLFYDLWYyMqd0WtQzpZMX2kQUoVghnpR34P8aAgBJEALw_wcB">
+          <div class="hov">
+            <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/06/73/08/c5.jpg" alt="Milan" height="400px">
+            <div class="image-text">
+            <h2>Milan</h2>
+          </div></div>
+        </a>
+      </div>
+      <div class="slide4">
+        <a href="https://www.getyourguide.com/-l32/?cmp=ga&cq_src=google_ads&cq_cmp=15505372488&cq_con=132158663258&cq_term=florence%20trip&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=15505372488&adgroup_id=132158663258&target_id=aud-1393039795580:kwd-334962343&loc_physical_ms=9062203&match_type=e&ad_id=628328439305&keyword=florence%20trip&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gclid=Cj0KCQjwqs6lBhCxARIsAG8YcDhA5d_R-gaMjLWghpWwEt3V9OOwHHjrHxXZc3ge-W1fLVyTFgFEiWMaAs5cEALw_wcB">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/c2/8e/45/caption.jpg?w=500&h=300&s=1" alt="Florence">
+            <div class="image-text">
+            <h2>Florence</h2>
+          </div></div>
+        </a>
+      </div>
+      <div class="slide4">
+        <a href="https://www.tripadvisor.in/Tourism-g187890-Palermo_Province_of_Palermo_Sicily-Vacations.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/33/f9/0c/palermo.jpg?w=700&h=500&s=1" alt="Palermo">
+            <div class="image-text">
+            <h2>Palermo</h2>
+          </div></div>
+        </a>
+      </div>
+      <div class="slide4">
+        <a href="https://www.tripadvisor.in/Tourism-g187871-Verona_Province_of_Verona_Veneto-Vacations.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/33/f8/08/verona.jpg?w=700&h=500&s=1" alt="Verona">
+            <div class="image-text">
+            <h2>Verona</h2>
+          </div></div>
+        </a>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="prev-btn4">&#8249;</button>
+      <button class="next-btn4">&#8250;</button>
+    </div>
+    </div>
+  </div>
+
+  <section class="transport-section" id="transport">
+  <h1 class="transport">Transport</h1>
+    <div class="transport-card">
+      <img src="https://mediapool.bmwgroup.com/cache/P9/201810/P90329157/P90329157-the-new-bmw-8-series-coupe-on-the-canal-grande-in-venice-10-2018-2202px.jpg" alt="Car">
+      <div class="details">
+        <h1 style="color: black;">Rent a Car</h1>
+        <p>Explore the destinations in Venice at your own pace with our car rental services.</p>
+        <a href="https://www.tripadvisor.com/RentalCars-g187870-Venice_Veneto.html" class="btn">Learn More</a>
+      </div>
+    </div>
+
+    <div class="transport-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR44HRvZKF0-d_ScfGEkK5M4X-GG8vmulxf8FyWxt0nqA&s" alt="Flight">
+      <div class="details">
+        <h1 style="color: black;">Book Flights</h1>
+        <p>Find and book flights to Venice with competitive fares.</p>
+        <a href="https://www.expedia.co.in/Flights-Search?leg1=from%3Amumbai%2Cto%3AVenice%20%28VCE-Marco%20Polo%29%2Cdeparture%3A31%2F07%2F2023TANYT&leg2=from%3AVenice%20%28VCE-Marco%20Polo%29%2Cto%3Amumbai%2Cdeparture%3A01%2F08%2F2023TANYT&mode=search&options=carrier%3A%2A%2Ccabinclass%3A%2Cmaxhops%3A1%2Cnopenalty%3AN&passengers=adults%3A1%2Cchildren%3A0%2Cinfantinlap%3AN&sortOrder=INCREASING&sortType=PRICE&trip=roundtrip"class="btn">Learn More</a>
+      </div>
+    </div>
+
+    <div class="transport-card">
+      <img src="https://www.italiarail.com/sites/default/files/2017-05/frecciarossa_750x450.jpg" alt="Train">
+      <div class="details">
+        <h1 style="color: black;">Train Tickets</h1>
+        <p>Travel conveniently by booking train tickets for your preferred routes.</p>
+        <a href="https://www.raileurope.com/en-us/destinations/trains-to-venice?gclid=Cj0KCQjwqs6lBhCxARIsAG8YcDiSsMB69nfs3xcEq6k3c41GTQL26eprtKDm1tatqBrFMoeecztdhIkaAi8YEALw_wcB&cmpid=PSN024101&ef_id=Cj0KCQjwqs6lBhCxARIsAG8YcDiSsMB69nfs3xcEq6k3c41GTQL26eprtKDm1tatqBrFMoeecztdhIkaAi8YEALw_wcB:G:s&s_kwcid=AL!9357!3!629648406136!!!g!!" class="btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+  const slider = document.querySelector('.slider');
+
+  const sliderWrapper = document.querySelector('.slider-wrapper');
+  const sliderWrapper2 = document.querySelector('.slider-wrapper2');
+  const sliderWrapper3 = document.querySelector('.slider-wrapper3');
+  const sliderWrapper4 = document.querySelector('.slider-wrapper4');
+
+
+  const slides = document.querySelectorAll('.slide');
+  const slides2 = document.querySelectorAll('.slide2');  
+  const slides3 = document.querySelectorAll('.slide3');
+  const slides4 = document.querySelectorAll('.slide4');
+
+
+
+  const prevBtn = document.querySelector('.prev-btn');
+  const prevBtn2 = document.querySelector('.prev-btn2');
+  const prevBtn3 = document.querySelector('.prev-btn3');
+  const prevBtn4 = document.querySelector('.prev-btn4');
+
+
+  const nextBtn = document.querySelector('.next-btn');
+  const nextBtn2 = document.querySelector('.next-btn2');
+  const nextBtn3 = document.querySelector('.next-btn3');
+  const nextBtn4 = document.querySelector('.next-btn4');
+
+
+
+  let currentIndex = 0;
+  const slideWidth = slides[0].clientWidth;
+  const slidesPerPage = 3;
+
+  prevBtn.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex -= slidesPerPage;
+      if (currentIndex < 0) {
+        currentIndex = 0;
+      }
+      sliderWrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+  prevBtn2.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex -= slidesPerPage;
+      if (currentIndex < 0) {
+        currentIndex = 0;
+      }
+      sliderWrapper2.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+  prevBtn3.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex -= slidesPerPage;
+      if (currentIndex < 0) {
+        currentIndex = 0;
+      }
+      sliderWrapper3.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+  prevBtn4.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex -= slidesPerPage;
+      if (currentIndex < 0) {
+        currentIndex = 0;
+      }
+      sliderWrapper4.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+
+  nextBtn.addEventListener('click', () => {
+    if (currentIndex < slides.length - slidesPerPage) {
+      currentIndex += slidesPerPage;
+      sliderWrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+  nextBtn2.addEventListener('click', () => {
+    if (currentIndex < slides2.length - slidesPerPage) {
+      currentIndex += slidesPerPage;
+      sliderWrapper2.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+  nextBtn3.addEventListener('click', () => {
+    if (currentIndex < slides3.length - slidesPerPage) {
+      currentIndex += slidesPerPage;
+      sliderWrapper3.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });  
+  nextBtn4.addEventListener('click', () => {
+    if (currentIndex < slides4.length - slidesPerPage) {
+      currentIndex += slidesPerPage;
+      sliderWrapper4.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+  </script>
+
+</body></html>

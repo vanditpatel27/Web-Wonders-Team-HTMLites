@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)file:///C:/Users/vishwa/Desktop/WEB%20WONDERS/venicefontchanges.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>
+    Kerala
+  </title>
+  <link rel="stylesheet" href="./Venice_upd_files/css">
+  <link rel="stylesheet" href="./Venice_upd_files/css(1)">
+</head>
+<body>
+  <style>
+    body {
+        font-family: "Audiowide", sans-serif;
+        background-image: url("https://cdn.hovia.com/app/uploads/blue-abstract-vector-world-map-wallpaper-mural-Plain-820x532.jpg");
+        
+      }
+    nav {
+            display: flex;
+            align-items: center ;
+            justify-content: center;
+            position: relative;
+          }
+          
+          ul {
+            list-style-type: none;
+            display: flex;
+          }
+          
+          li {
+            list-style: none;
+            font-size: 1.3em;
+          }
+          #navbar::before{
+            content: "";
+            background-color: black;
+            position: relative;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+          
+          a {
+            color:darkgreen;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+          }
+          
+          a:hover {
+            background-color: rgba(59, 236, 252, 0.489);
+            text-decoration: none;
+          }
+
+      .k1{
+        text-align: left;
+        margin-left: 400px !important;
+        margin-top: 20px;
+        color: yellow !important;
+        font-size: 64px;
+      }
+      .k2{
+        text-align: center;
+        font-size: 48px;
+      }
+
+        table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      td {
+        border: 2px;
+        padding: 0px;
+        height: 50px;
+      }
+
+      .full-height {
+        grid-row: span 2;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .hov{
+        position: relative;
+        display: inline-block;
+      }
+
+      .hov img{
+          opacity:1;
+          display: block;
+          width: 100%;
+          height: auto;
+      }
+
+      .hov img:hover{
+        opacity:0.5;
+      } 
+
+      .hov .image-text {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: purple ;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+        margin-top: 10px;
+
+      }
+      .image-text h2 {
+        margin: 0;
+        color: crimson;
+      }
+      
+      .slider {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+      }
+
+      .slider-wrapper,.slider-wrapper2,.slider-wrapper3,.slider-wrapper4 {
+        position: relative; /* Update position to relative */
+        display: flex;
+        transition: transform 0.5s ease;
+      }
+
+      .slide,.slide2,.slide3,.slide4 {
+        flex: 0 0 calc(33.33% - 10px);
+        max-width: 33.33%;
+        transition: opacity 0.5s ease;
+        position: relative; /* Update position to relative */
+        text-align:center; 
+        margin-bottom: 20px;
+      }
+
+      .slide img,.slide2 img,.slide3 img ,.slide4 img {
+        display: block;
+        width: 300px; /* Set the desired width */
+        height: 200px; /* Set the desired height */
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      .controls {
+        position:absolute;
+        top: 50%;
+        left: -10px;
+        transform: translateY(-50%);
+        display: flex;
+        z-index: 1; /* Ensure buttons appear above images */
+      }
+
+      .prev-btn,
+      .next-btn,.prev-btn2,.next-btn2,.prev-btn3,.next-btn3,.next-btn4,.prev-btn4 {
+        border: none;
+        background: transparent;
+        font-size: 120px;
+        color: aqua;
+        padding: 10px;
+        cursor: pointer;
+        outline: none;
+      }
+
+      .prev-btn,.prev-btn2,.prev-btn3,.prev-btn4 {
+        margin-right: 10px;
+        align-items:left;
+        
+      }
+
+      .next-btn,.next-btn2,.next-btn3,.next-btn4 {
+        margin-left: 1130px;
+        align-items: right;
+      }
+
+      .transport{
+        text-align: center;
+        color: orange !important;
+        font-size: 36px ;
+      }
+      .transport-section {
+      padding: 20px;
+      background-color: khaki;
+    }
+
+    .transport-card {
+        border: 1px solid brown;
+        background-color: lightgray;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .transport-card img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-right: 20px;
+    }
+
+    .transport-card .details {
+      flex-grow: 1;
+    }
+
+    .transport-card h2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-style: normal;
+        color: black;
+    }
+
+    .transport-card p {
+        margin: 0;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 300;
+        font-style: oblique;
+        color: black;
+        
+      }
+      p{
+      font-size: large;
+      font-weight: normal;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: firebrick;
+      }
+      h1{
+          font-family:'Times New Roman', Times, serif;
+          font-size: larger;
+          font-weight: bolder;
+          font-variant: normal ;
+          font-kerning: normal;
+          font-variant-east-asian: normal;
+          color: rgb(2, 0, 52);
+      }
+      h2{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: medium;
+      font-weight: bold;
+      color: rgb(5, 0, 143);
+      }
+
+  </style>
+
+  <div>
+  <p class="k1"><h1 class="k2">Kerala</h1> </p>  
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="#hotels">HOTEL ROOMS/ACCOMODATION</a></li>
+      <li><a href="#thingstodo">THINGS TO DO</a></li>
+      <li><a href="#restaurants">RESTAURANTS</a></li>
+      <li><a href="#dest">POPULAR DESTINATIONS</a></li>
+      <li><a href="#transport">TRANSPORT</a></li>
+    </ul>
+  </nav>
+
+  <table>
+    <tr>
+      <td rowspan="2" class="full-height">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/d5/26/a9/psx-20170317-114353-largejpg.jpg?w=1400&h=-1&s=1" alt="Image 1">
+      </td>
+      <td>
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/0a/1d/c0/ponmudi-6.jpg?w=1000&h=500&s=1" alt="Image 2">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/3b/93/2e/the-lake-again.jpg?w=1000&h=500&s=1" alt="Image 3">
+      </td>
+    </tr>
+  </table>
+
+  <div class="slider" id="hotels">
+    <div class="container">
+      <div class="text">
+        <h1>Stay</h1>
+        <p>A mix of the charming, modern, and tried and true.</p>
+        <p>
+          <a class="UikNM _G B- _S _T c G_ y bYExr xARtZ wnNQG" href="https://www.tripadvisor.in/Hotels-g297631-Kerala-Hotels.html">See all</a>
+        </p>
+      </div>
+    <div class="slider-wrapper">
+      <div class="slide">
+        <a href="https://www.tripadvisor.in/Hotel_Review-g5258996-d7281489-Reviews-Chandys_Windy_Woods-Chithirapuram_Munnar_Idukki_District_Kerala.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/a8/6c/4f/chandys-windy-woods.jpg?w=800&h=-1&s=1" alt="Chandys Windy Woods">
+          </div>
+          <div>
+            <h2>Chandys Windy Woods</h2>
+          </div>
+        </a>
+      </div>
+      <div class="slide">
+        <a href="https://www.tripadvisor.in/Hotel_Review-g311295-d446942-Reviews-Niraamaya_Retreats_Surya_Samudra-Kovalam_Thiruvananthapuram_District_Kerala.html">
+          <div class="hov">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/08/e8/7d/banyan-tree-bungalow.jpg?w=1100&h=-1&s=1" alt="Niraamaya Retreats Surya Samudra">
+          </div>
+          <div>
+          <h2>Niraamaya Retreats Surya Samudra</h2>
+        </div>
+        </a>
+      </div>
+      <div class="slide">
+        <a href="https://www.tripadvisor.in/Hotel_Review-g297637-d2644936-Reviews-Uday_Suites_Garden_Hotel-Thiruvananthapuram_Trivandrum_Thiruvananthapuram_District_Ker.html">
+          <div class="hov">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/15/56/3d/uday-suites.jpg?w=1000&h=-1&s=1" alt="Uday Suites Garden Hotel">
+          </div>
+          <div>
+          <h2>Uday Suites Garden Hotel</h2>
+        </div>
+        </a>
+      </div>
+      <div class="slide">
+        <a href="https://www.tripadvisor.in/Hotel_Review-g2295130-d2244535-Reviews-Vythiri_Village_Resort-Vythiri_Wayanad_District_Kerala.html">
+          <div class="hov">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/75/ed/a2/vythiri-village.jpg?w=900&h=-1&s=1" alt="Vythiri Village Resort">
+        <div><h2>Vythiri Village Resort</h2></div>
+      </div>
+    </a></div>
+      <div class="slide">
+        <a href="https://www.tripadvisor.in/Hotel_Review-g297633-d15688645-Reviews-Monsoon_Empress-Kochi_Cochin_Ernakulam_District_Kerala.html">
+          <div class="hov">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/7f/be/8e/monsoon-empress.jpg?w=1400&h=-1&s=1" alt="Monsoon Empress">
+        <div><h2>Monsoon Empress</h2></div>
+        </div></a>
+      </div>
+      <div class="slide">
+        <a href="https://www.tripadvisor.in/Hotel_Review-g297636-d8569748-Reviews-Forest_Canopy-Thekkady_Idukki_District_Kerala.html">
+          <div class="hov">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/87/a0/37/forest-canopy.jpg?w=2000&h=-1&s=1" alt="Forest Canopy">
+        <div><h2>Forest Canopy</h2></div>
+        </div></a>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="prev-btn">&#8249;</button>
+      <button class="next-btn">&#8250;</button>
+    </div>
+    </div>
+  </div>
+
+  <div class="slider" id="thingstodo">
+    <div class="container">
+      <div class="text">
+        <h1>Popular things to do</h1>
+        <p>Places to see, ways to wander, and signature experiences.</p>
+        <p>
+          <a class="UikNM _G B- _S _T c G_ y bYExr xARtZ wnNQG" href="https://www.tripadvisor.in/Attractions-g297631-Activities-Kerala.html">See all</a>
+        </p>
+      </div>
+    <div class="slider-wrapper2">
+      <div class="slide2">
+        <a href="https://www.tripadvisor.in/Attraction_Review-g297633-d4021055-Reviews-LuLu_Mall-Kochi_Cochin_Ernakulam_District_Kerala.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/c6/77/bd/lulu.jpg?w=600&h=-1&s=1" alt="LuLu Mall">
+          </div>
+          <div>
+            <h2>LuLu Mall</h2>
+          </div>
+        </a>
+      </div>
+      <div class="slide2">
+        <a href="https://www.tripadvisor.in/Attraction_Review-g297637-d478102-Reviews-Sree_Padmanabhaswamy_Temple-Thiruvananthapuram_Trivandrum_Thiruvananthapuram_Distr.html">
+          <div class="hov">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/fe/2b/f3/sree-padmanabhaswamy.jpg?w=1600&h=-1&s=1" alt="Sree Padmanabhaswamy Temple">
+          </div>
+          <div>
+          <h2>Sree Padmanabhaswamy Temple</h2>
+        </div>
+        </a>
+      </div>
+      <div class="slide2">
+        <a href="https://www.tripadvisor.in/Attraction_Review-g297636-d4508221-Reviews-Gavi_Forest-Thekkady_Idukki_District_Kerala.html">
+          <div class="hov">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/5d/0d/82/water-fall-in-gavi.jpg?w=1400&h=-1&s=1" alt="Gavi Forest ">
+          </div>
+          <div>
+          <h2>Gavi Forest</h2>
+        </div>
+        </a>
+      </div>
+      <div class="slide2">
+        <a href="https://www.tripadvisor.in/Attraction_Review-g303881-d1205025-Reviews-Tea_Gardens-Munnar_Idukki_District_Kerala.html">
+          <div class="hov">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/e9/52/a2/sunset-at-tata-tea-gardens.jpg?w=1100&h=-1&s=1" alt="Tea Gardens">
+        <div><h2>Tea Gardens</h2></div>
+      </div>
+    </a></div>
+      <div class="slide2">
+        <a href="https://www.tripadvisor.in/Attraction_Review-g2295130-d2587686-Reviews-Banasura_Sagar_Dam-Vythiri_Wayanad_District_Kerala.html">
+          <div class="hov">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/3b/cb/a7/banasura-sagar-dam.jpg?w=2400&h=-1&s=1" alt="Banasura Sagar Dam">
+        <div><h2>Banasura Sagar Dam</h2></div>
+        </div></a>
+      </div>
+      <div class="slide2">
+        <a href="https://www.tripadvisor.in/Attraction_Review-g608471-d2693898-Reviews-Ambalapuzha_Sree_Krishna_Temple-Alappuzha_Alappuzha_District_Kerala.html">
+          <div class="hov">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/43/cc/37/ambalapuzha-sree-krishna.jpg?w=2000&h=-1&s=1" alt="Ambalapuzha Sree Krishna Temple">
+        <div><h2>Ambalapuzha Sree Krishna Temple</h2></div>
+        </div></a>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="prev-btn2">&#8249;</button>
+      <button class="next-btn2">&#8250;</button>
+    </div>
+    </div>
+  </div>
+
+  <div class="slider" id="restaurants">
+    <div class="container">
+      <div class="text">
+        <h1>Eat</h1>
+        <p>Can't-miss spots to dine, drink, and feast.</p>
+        <p>
+          <a class="UikNM _G B- _S _T c G_ y bYExr xARtZ wnNQG" href="https://www.tripadvisor.in/Restaurants-g297631-Kerala.html">See all</a>
+        </p>
+      </div>
+    <div class="slider-wrapper3">
+      <div class="slide3">
+        <a href="https://www.tripadvisor.in/Restaurant_Review-g297636-d2054045-Reviews-Bar_B_Que-Thekkady_Idukki_District_Kerala.html">
+          <div class="hov">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/09/ff/b0/7d/photo0jpg.jpg" alt="Bar-B-Que">
+          </div>
+          <div>
+            <h2>Bar-B-Que</h2>
+          </div>
+        </a>
+      </div>
+      <div class="slide3">
+        <a href="https://www.tripadvisor.in/Restaurant_Review-g303881-d2634677-Reviews-Rapsy_Restaurant-Munnar_Idukki_District_Kerala.html">
+          <div class="hov">
+          <img src="https://media-cdn.tripadvisor.com/media/photo-f/06/6c/b6/4c/rapsy-restaurant.jpg" alt="Rapsy Restaurant">
+          </div>
+          <div>
+          <h2>Rapsy Restaurant</h2>
+        </div>
+        </a>
+      </div>
+      <div class="slide3">
+        <a href="https://www.tripadvisor.in/Restaurant_Review-g2295130-d4737893-Reviews-The_Coffee_Grove_Restaurant_Resorts_CG_Ala-Vythiri_Wayanad_District_Kerala.html">
+          <div class="hov">
+          <img src="https://media-cdn.tripadvisor.com/media/photo-p/13/9c/8d/65/the-coffee-grove-restaurant.jpg" alt="The Coffee Grove Restaurant & Resorts">
+          </div>
+          <div>
+          <h2>The Coffee Grove Restaurant & Resorts</h2>
+        </div>
+        </a>
+      </div>
+      <div class="slide3">
+        <a href="https://www.tripadvisor.in/Restaurant_Review-g297637-d3493926-Reviews-Villa_Maya-Thiruvananthapuram_Trivandrum_Thiruvananthapuram_District_Kerala.html">
+          <div class="hov">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/14/f4/0f/58/inside-seating.jpg" alt="Villa Maya">
+        <div><h2>Villa Maya</h2></div>
+      </div>
+    </a></div>
+      <div class="slide3">
+        <a href="https://www.tripadvisor.in/Restaurant_Review-g297633-d6965473-Reviews-Latest_Recipe-Kochi_Cochin_Ernakulam_District_Kerala.html">
+          <div class="hov">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/92/49/95/interior.jpg" alt="Latest Recipe">
+        <div><h2>Latest Recipe</h2></div>
+        </div></a>
+      </div>
+      <div class="slide3">
+        <a href="https://www.tripadvisor.in/Restaurant_Review-g297639-d16869411-Reviews-The_Bait_Hook_Seaside_Restaurant-Varkala_Town_Varkala_Thiruvananthapuram_Distric.html">
+          <div class="hov">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/16/e9/09/82/ground-floor-at-the-bait.jpg" alt="The Bait & Hook: Seaside Restaurant">
+        <div><h2>The Bait & Hook: Seaside Restaurant</h2></div>
+        </div></a>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="prev-btn3">&#8249;</button>
+      <button class="next-btn3">&#8250;</button>
+    </div>
+    </div>
+  </div>
+
+  <div class="slider" id="dest">
+    <div class="container">
+      <div class="text">
+        <h1>Destinations</h1>
+      </div>
+    <div class="slider-wrapper4">
+      <div class="slide4">
+        <a href="https://www.tripadvisor.in/Tourism-g2295130-Vythiri_Wayanad_District_Kerala-Vacations.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/bc/dd/ad/its-a-location-just-east.jpg?w=1400&h=900&s=1" alt="Vythiri">
+            <div class="image-text">
+            <h2>Vythiri</h2>
+          </div></div>
+        </a>
+      </div>
+      <div class="slide4">
+        <a href="https://www.tripadvisor.in/Tourism-g303881-Munnar_Idukki_District_Kerala-Vacations.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/b2/72/cb/img-20170909-110821-burst2.jpg?w=1400&h=900&s=1" alt="Munnar">
+            <div class="image-text">
+            <h2>Munnar</h2>
+          </div></div>
+        </a>
+      </div>
+      <div class="slide4">
+        <a href="https://www.tripadvisor.in/Tourism-g608471-Alappuzha_Alappuzha_District_Kerala-Vacations.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/f4/b0/b7/alappuzha-beach.jpg?w=1400&h=900&s=1" alt="Alappuzha" height="400px">
+            <div class="image-text">
+            <h2>Alappuzha</h2>
+          </div></div>
+        </a>
+      </div>
+      <div class="slide4">
+        <a href="https://www.tripadvisor.in/Tourism-g297633-Kochi_Cochin_Ernakulam_District_Kerala-Vacations.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/de/f0/eb/backwater-tourism.jpg?w=700&h=-1&s=1" alt="Kochi (Cochin)">
+            <div class="image-text">
+            <h2>Kochi (Cochin)</h2>
+          </div></div>
+        </a>
+      </div>
+      <div class="slide4">
+        <a href="https://www.tripadvisor.in/Tourism-g297639-Varkala_Town_Varkala_Thiruvananthapuram_District_Kerala-Vacations.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/9e/48/ea/anjengo-fort.jpg?w=1400&h=-1&s=1" alt="Varkala Town">
+            <div class="image-text">
+            <h2>Varkala Town</h2>
+          </div></div>
+        </a>
+      </div>
+      <div class="slide4">
+        <a href="https://www.tripadvisor.in/Tourism-g311295-Kovalam_Thiruvananthapuram_District_Kerala-Vacations.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/12/dd/fa/kovalam.jpg?w=1400&h=900&s=1" alt="Kovalam">
+            <div class="image-text">
+            <h2>Kovalam</h2>
+          </div></div>
+        </a>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="prev-btn4">&#8249;</button>
+      <button class="next-btn4">&#8250;</button>
+    </div>
+    </div>
+  </div>
+
+  <section class="transport-section" id="transport">
+  <h1 class="transport">Transport</h1>
+    <div class="transport-card">
+      <img src="https://cdn.pixabay.com/photo/2016/02/13/13/11/oldtimer-1197800_640.jpg" alt="Car">
+      <div class="details">
+        <h1 style="color: black;">Rent a Car</h1>
+        <p>Explore the destinations in Kerala at your own pace with our car rental services.</p>
+        <a href="https://www.indusgo.in/?utm_source=google&utm_medium=cpc&utm_campaign=IndusGo_1&gclid=EAIaIQobChMIr5iw1IyRgAMVh0krCh154w8ZEAAYASAAEgKugfD_BwE" class="btn">Learn More</a>
+      </div>
+    </div>
+
+    <div class="transport-card">
+      <img src="https://www.millenniumpost.in/h-upload/2023/01/13/663806-dbe3f629ed.webp" alt="Flight">
+      <div class="details">
+        <h1 style="color: black;">Book Flights</h1>
+        <p>Find and book flights to Jammu and Kashmir with competitive fares.</p>
+        <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiqxdTfjJGAAxWRtZYKHVQ3AW4YABAAGgJ0bA&ohost=www.google.com&cid=CAASJuRotEdXkurtw0BQlCtWOGKPSG2Gm6jONlj0a33o8qtAxA33uYa3&sig=AOD64_0mNKp5b_Uii3BYGtZK-DhGLqIzJQ&q&adurl&ved=2ahUKEwi1y8zfjJGAAxUEAYgKHYqIBdQQ0Qx6BAgNEAM" class="btn">Learn More</a>
+      </div>
+    </div>
+
+    <div class="transport-card">
+      <img src="https://www.tourmyindia.com/states/jammu-kashmir/image/by-train-jammu-kashmir.png" alt="Train">
+      <div class="details">
+        <h1 style="color: black;">Train Tickets</h1>
+        <p>Travel conveniently by booking train tickets for your preferred routes.</p>
+        <a href="https://www.makemytrip.com/railways/ahmedabad-cochin-train-tickets.html" class="btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+  const slider = document.querySelector('.slider');
+
+  const sliderWrapper = document.querySelector('.slider-wrapper');
+  const sliderWrapper2 = document.querySelector('.slider-wrapper2');
+  const sliderWrapper3 = document.querySelector('.slider-wrapper3');
+  const sliderWrapper4 = document.querySelector('.slider-wrapper4');
+
+
+  const slides = document.querySelectorAll('.slide');
+  const slides2 = document.querySelectorAll('.slide2');  
+  const slides3 = document.querySelectorAll('.slide3');
+  const slides4 = document.querySelectorAll('.slide4');
+
+
+
+  const prevBtn = document.querySelector('.prev-btn');
+  const prevBtn2 = document.querySelector('.prev-btn2');
+  const prevBtn3 = document.querySelector('.prev-btn3');
+  const prevBtn4 = document.querySelector('.prev-btn4');
+
+
+  const nextBtn = document.querySelector('.next-btn');
+  const nextBtn2 = document.querySelector('.next-btn2');
+  const nextBtn3 = document.querySelector('.next-btn3');
+  const nextBtn4 = document.querySelector('.next-btn4');
+
+
+
+  let currentIndex = 0;
+  const slideWidth = slides[0].clientWidth;
+  const slidesPerPage = 3;
+
+  prevBtn.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex -= slidesPerPage;
+      if (currentIndex < 0) {
+        currentIndex = 0;
+      }
+      sliderWrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+  prevBtn2.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex -= slidesPerPage;
+      if (currentIndex < 0) {
+        currentIndex = 0;
+      }
+      sliderWrapper2.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+  prevBtn3.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex -= slidesPerPage;
+      if (currentIndex < 0) {
+        currentIndex = 0;
+      }
+      sliderWrapper3.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+  prevBtn4.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex -= slidesPerPage;
+      if (currentIndex < 0) {
+        currentIndex = 0;
+      }
+      sliderWrapper4.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+
+  nextBtn.addEventListener('click', () => {
+    if (currentIndex < slides.length - slidesPerPage) {
+      currentIndex += slidesPerPage;
+      sliderWrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+  nextBtn2.addEventListener('click', () => {
+    if (currentIndex < slides2.length - slidesPerPage) {
+      currentIndex += slidesPerPage;
+      sliderWrapper2.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+  nextBtn3.addEventListener('click', () => {
+    if (currentIndex < slides3.length - slidesPerPage) {
+      currentIndex += slidesPerPage;
+      sliderWrapper3.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });  
+  nextBtn4.addEventListener('click', () => {
+    if (currentIndex < slides4.length - slidesPerPage) {
+      currentIndex += slidesPerPage;
+      sliderWrapper4.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+  </script>
+</body>
+</html>

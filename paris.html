@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)file:///C:/Users/vishwa/Desktop/WEB%20WONDERS/venicefontchanges.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>
+    Paris
+  </title>
+  <link rel="stylesheet" href="./Venice_upd_files/css">
+  <link rel="stylesheet" href="./Venice_upd_files/css(1)">
+</head>
+<body>
+  <style>
+    body {
+        font-family: "Audiowide", sans-serif;
+        background-image: url("https://cdn.hovia.com/app/uploads/blue-abstract-vector-world-map-wallpaper-mural-Plain-820x532.jpg");
+        
+      }
+    nav {
+            display: flex;
+            align-items: center ;
+            justify-content: center;
+            position: relative;
+          }
+          
+          ul {
+            list-style-type: none;
+            display: flex;
+          }
+          
+          li {
+            list-style: none;
+            font-size: 1.3em;
+          }
+          #navbar::before{
+            content: "";
+            background-color: black;
+            position: relative;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+          
+          a {
+            color:darkgreen;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+          }
+          
+          a:hover {
+            background-color: rgba(59, 236, 252, 0.489);
+            text-decoration: none;
+          }
+
+      .p1{
+        text-align: left;
+        margin-left: 400px !important;
+        margin-top: 20px;
+        color: yellow !important;
+        font-size: 64px;
+      }
+      .p2{
+        text-align: center;
+        font-size: 48px;
+      }
+
+        table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      td {
+        border: 2px;
+        padding: 0px;
+        height: 50px;
+      }
+
+      .full-height {
+        grid-row: span 2;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .hov{
+        position: relative;
+        display: inline-block;
+      }
+
+      .hov img{
+          opacity:1;
+          display: block;
+          width: 100%;
+          height: auto;
+      }
+
+      .hov img:hover{
+        opacity:0.5;
+      } 
+
+      .hov .image-text {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: purple ;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+        margin-top: 10px;
+
+      }
+      .image-text h2 {
+        margin: 0;
+        color: crimson;
+      }
+      
+      .slider {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+      }
+
+      .slider-wrapper,.slider-wrapper2,.slider-wrapper3,.slider-wrapper4 {
+        position: relative; /* Update position to relative */
+        display: flex;
+        transition: transform 0.5s ease;
+      }
+
+      .slide,.slide2,.slide3,.slide4 {
+        flex: 0 0 calc(33.33% - 10px);
+        max-width: 33.33%;
+        transition: opacity 0.5s ease;
+        position: relative; /* Update position to relative */
+        text-align:center; 
+        margin-bottom: 20px;
+      }
+
+      .slide img,.slide2 img,.slide3 img ,.slide4 img {
+        display: block;
+        width: 300px; /* Set the desired width */
+        height: 200px; /* Set the desired height */
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      .controls {
+        position:absolute;
+        top: 50%;
+        left: -10px;
+        transform: translateY(-50%);
+        display: flex;
+        z-index: 1; /* Ensure buttons appear above images */
+      }
+
+      .prev-btn,
+      .next-btn,.prev-btn2,.next-btn2,.prev-btn3,.next-btn3,.next-btn4,.prev-btn4 {
+        border: none;
+        background: transparent;
+        font-size: 120px;
+        color: aqua;
+        padding: 10px;
+        cursor: pointer;
+        outline: none;
+      }
+
+      .prev-btn,.prev-btn2,.prev-btn3,.prev-btn4 {
+        margin-right: 10px;
+        align-items:left;
+        
+      }
+
+      .next-btn,.next-btn2,.next-btn3,.next-btn4 {
+        margin-left: 1130px;
+        align-items: right;
+      }
+
+      .transport{
+        text-align: center;
+        color: orange !important;
+        font-size: 36px ;
+      }
+      .transport-section {
+      padding: 20px;
+      background-color: khaki;
+    }
+
+    .transport-card {
+        border: 1px solid brown;
+        background-color: lightgray;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .transport-card img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-right: 20px;
+    }
+
+    .transport-card .details {
+      flex-grow: 1;
+    }
+
+    .transport-card h2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-style: normal;
+        color: black;
+    }
+
+    .transport-card p {
+        margin: 0;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 300;
+        font-style: oblique;
+        color: black;
+        
+      }
+      p{
+      font-size: large;
+      font-weight: normal;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: firebrick;
+      }
+      h1{
+          font-family:'Times New Roman', Times, serif;
+          font-size: larger;
+          font-weight: bolder;
+          font-variant: normal ;
+          font-kerning: normal;
+          font-variant-east-asian: normal;
+          color: rgb(2, 0, 52);
+      }
+      h2{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: medium;
+      font-weight: bold;
+      color: rgb(5, 0, 143);
+      }
+
+  </style>
+  <div>
+  <p class="p1"><h1 class="p2">PARIS</h1> </p> 
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#hotels">HOTEL ROOMS/ACCOMODATION</a></li>
+      <li><a href="#transport">TRANSPORT</a></li>
+      <li><a href="#restaurants">RESTAURANTS</a></li>
+      <li><a href="#thingstodo">THINGS TO DO</a></li>
+      <li><a href="#dest">POPULAR DESTINATIONS</a></li>
+    </ul>
+  </nav>
+
+  <table>
+    <tbody><tr>
+      <td rowspan="2" class="full-height">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/4b/59/86/caption.jpg?w=500&h=400&s=1" alt="Image 1">
+      </td>
+        
+      <td>
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/ba/08/3b/photo0jpg.jpg?w=500&h=-1&s=1" alt="Image 2">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/c2/86/0e/caption.jpg?w=500&h=400&s=1" alt="Image 3">
+      </td>
+    </tr>
+  </tbody>
+  </table>
+
+  <div class="slider" id="hotels">
+    <div class="container">
+      <div class="text">
+        <h1>Stay</h1>
+        <p>Indulge in Opulence: Experience the Epitome of Luxury at Our Hotels</p>
+        <p>
+          <a class="UikNM _G B- _S _T c G_ y bYExr xARtZ wnNQG" href="https://www.tripadvisor.in/Search?q=paris&searchSessionId=001e03f11480b3b8.ssid&searchNearby=false&geo=187147&sid=EAF14F21017744B3BEB3340FD16146A61689632469233&blockRedirect=true&ssrc=h&rf=1">See all</a>
+        </p>
+      </div>
+    <div class="slider-wrapper">
+      <div class="slide">
+        <a href="https://www.tripadvisor.in/Hotel_Review-g187147-d228694-Reviews-Hotel_Malte_Astotel-Paris_Ile_de_France.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/6d/cc/11/breakfast-room.jpg?w=100&h=-1&s=1" alt="Hotel Malte">
+          </div>
+          <div>
+            <h2>Hotel Malte</h2>
+          </div>
+        </a>
+      </div>
+      <div class="slide">
+        <a href="https://www.tripadvisor.in/Hotel_Review-g187147-d230431-Reviews-Hotel_Astoria_Astotel-Paris_Ile_de_France.html">
+          <div class="hov">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/35/41/ad/hotel-astoria-opera-astotel.jpg?w=300&h=300&s=1" alt="Hotel Astoria">
+          </div>
+          <div>
+          <h2>Hotel Astoria</h2>
+        </div>
+        </a>
+      </div>
+      <div class="slide">
+        <a href="https://www.tripadvisor.in/Hotel_Review-g187147-d197424-Reviews-Novotel_Paris_Les_Halles-Paris_Ile_de_France.html">
+          <div class="hov">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/22/ec/22/bulle-d-hiver.jpg?w=1200&h=-1&s=1" alt="Novotel Paris Les Halles ">
+          </div>
+          <div>
+          <h2>Novotel Paris Les Halles</h2>
+        </div>
+        </a>
+      </div>
+      <div class="slide">
+        <a href="https://www.tripadvisor.in/Hotel_Review-g187147-d10159593-Reviews-Hotel_La_Comtesse-Paris_Ile_de_France.html">
+          <div class="hov">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/0f/50/62/hotel-la-comtesse.jpg?w=1200&h=-1&s=1" alt="Hotel La Comtesse">
+        <div><h2>Hotel La Comtesse </h2></div>
+      </div>
+    </a></div>
+      <div class="slide">
+        <a href="https://www.tripadvisor.in/Hotel_Review-g187147-d232552-Reviews-La_Maison_Favart-Paris_Ile_de_France.html#/media/232552/602178763:p/?albumid=101&type=0&category=101">
+          <div class="hov">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/e4/84/cb/exterior-view.jpg?w=700&h=-1&s=1" alt="La Maison Favart">
+        <div><h2>La Maison Favart </h2></div>
+              </div></a>
+      </div>
+     <div class="slide">
+        <a href="https://www.tripadvisor.in/Hotel_Review-g187147-d23396908-Reviews-Hotel_Le_Milie_Rose-Paris_Ile_de_France.html">
+          <div class="hov">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/51/f7/b6/exterior-hotel.jpg?w=700&h=-1&s=1" alt="Hotel Le Milie Rose">
+        <div><h2>Hotel Le Milie Rose </h2></div>
+        </div></a>
+      </div> 
+    </div>
+    <div class="controls">
+      <button class="prev-btn">&#8249;</button>
+      <button class="next-btn">&#8250;</button>
+    </div>
+  </div>
+  </div>
+
+  <div class="slider" id="thingstodo">
+    <div class="container">
+      <div class="text">
+        <h1>Popular things to do</h1>
+        <p>Places to see, ways to wander, and signature experiences.</p>
+        <p>
+          <a class="UikNM _G B- _S _T c G_ y bYExr xARtZ wnNQG" href="https://www.tripadvisor.in/Attractions-g187147-Activities-Paris_Ile_de_France.html">See all</a>
+        </p>
+      </div>
+    <div class="slider-wrapper2">
+      <div class="slide2">
+        <a href="https://www.tripadvisor.in/Attraction_Review-g226865-d189258-Reviews-Disneyland_Paris-Marne_la_Vallee_Seine_et_Marne_Ile_de_France.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/92/e4/97/disneyland-paris.jpg?w=1200&h=-1&s=1" alt="Disneyland Paris">
+          </div>
+          <div>
+            <h2>Disneyland Paris</h2>
+          </div>
+        </a>
+      </div>
+      <div class="slide2">
+        <a href="https://www.tripadvisor.in/Attraction_Review-g187147-d188151-Reviews-Eiffel_Tower-Paris_Ile_de_France.html">
+          <div class="hov">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/9e/7f/9d/eiffeltoren.jpg?w=1100&h=-1&s=1" alt="Eiffel Tower">
+          </div>
+          <div>
+          <h2>Eiffel Tower</h2>
+        </div>
+        </a>
+      </div>
+      <div class="slide2">
+        <a href="https://www.tripadvisor.in/Attraction_Review-g187147-d2613395-Reviews-Paris_by_Mouth-Paris_Ile_de_France.html">
+          <div class="hov">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/78/e6/2e/we-tasted-all-these-paris.jpg?w=1200&h=900&s=1" alt="Paris by Mouth ">
+          </div>
+          <div>
+          <h2>Paris by Mouth </h2>
+        </div>
+        </a>
+      </div>
+      <div class="slide2">
+        <a href="https://www.tripadvisor.in/AttractionProductReview-g187147-d11454297-Big_Bus_Paris_Hop_On_Hop_Off_Tour-Paris_Ile_de_France.html">
+          <div class="hov">
+        <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/7f/a1/e7.jpg" alt="Big Bus Paris Hop-On Hop-Off Tour">
+        <div><h2>Big Bus Paris Hop-On Hop-Off Tour</h2></div>
+      </div>
+    </a></div>
+      <div class="slide2">
+        <a href="https://www.tripadvisor.in/Hotel_Review-g26308655-d143336-Reviews-Paris_Las_Vegas_Hotel_Casino-Paradise_Nevada.html">
+          <div class="hov">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/73/e5/81/paris-las-vegas-hotel.jpg?w=1200&h=-1&s=1" alt="Paris Las Vegas Hotel & Casino">
+        <div><h2>Paris Las Vegas Hotel & Casino </h2></div>
+        </div></a>
+      </div>
+      <div class="slide2">
+        <a href="https://www.tripadvisor.in/Attraction_Review-g187147-d189229-Reviews-The_Paris_Catacombs-Paris_Ile_de_France.html">
+          <div class="hov">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/f7/cb/ac/the-catacombs.jpg?w=1200&h=-1&s=1" alt="The Paris Catacombs">
+        <div><h2>The Paris Catacombs </h2></div>
+        </div></a>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="prev-btn2">&#8249;</button>
+      <button class="next-btn2">&#8250;</button>
+    </div>
+    </div>
+  </div>
+
+  <div class="slider" id="restaurants">
+    <div class="container">
+      <div class="text">
+        <h1>Eat</h1>
+        <p>Quintessential bistros, restaurants, and beyond.</p>
+        <p>
+          <a class="UikNM _G B- _S _T c G_ y bYExr xARtZ wnNQG" href="https://www.tripadvisor.in/Search?q=paris&searchSessionId=00082e38e7890691.ssid&searchNearby=false&geo=297622&sid=EAF14F21017744B3BEB3340FD16146A61689625467310&blockRedirect=true&ssrc=e&rf=1">See all</a>
+        </p>
+      </div>
+    <div class="slider-wrapper3">
+      <div class="slide3">
+        <a href="https://www.tripadvisor.in/Restaurant_Review-g187147-d20208797-Reviews-Da_Giuseppe-Paris_Ile_de_France.html">
+          <div class="hov">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/1c/d5/ae/72/la-pizza-du-moment-avec.jpg" alt="Da Giuseppe">
+          </div>
+          <div>
+            <h2>Da Giuseppe</h2>
+          </div>
+        </a>
+      </div>
+      <div class="slide3">
+        <a href="https://www.tripadvisor.in/Restaurant_Review-g187147-d1019499-Reviews-Assanabel_Paris-Paris_Ile_de_France.html">
+          <div class="hov">
+          <img src="https://media-cdn.tripadvisor.com/media/photo-s/21/b5/54/84/les-mezzes-les-plus-colores.jpg" alt="Assanabel Paris">
+          </div>
+          <div>
+          <h2>Assanabel Paris</h2>
+        </div>
+        </a>
+      </div>
+      <div class="slide3">
+        <a href="https://www.tripadvisor.in/Restaurant_Review-g187147-d1327112-Reviews-Chez_Nicos-Paris_Ile_de_France.html">
+          <div class="hov">
+          <img src="https://media-cdn.tripadvisor.com/media/photo-f/28/ff/f2/c3/la-crepe-traditionelle.jpg" alt="Chez Nicos">
+          </div>
+          <div>
+          <h2>Chez Nicos</h2>
+        </div>
+        </a>
+      </div>
+      <div class="slide3">
+        <a href="https://www.tripadvisor.in/Restaurant_Review-g187147-d12067788-Reviews-Alix_et_Mika-Paris_Ile_de_France.html">
+          <div class="hov">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-l/1a/18/2a/6c/mega-plateau.jpg" alt="Alix et Mika">
+        <div><h2>Alix et Mika</h2></div>
+      </div>
+    </a></div>
+      <div class="slide3">
+        <a href="https://www.tripadvisor.in/Restaurant_Review-g187147-d14210107-Reviews-Bao_ME-Paris_Ile_de_France.html">
+          <div class="hov">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/13/68/23/9f/plat5.jpg" alt="Bao & ME">
+        <div><h2>Bao & ME</h2></div>
+        </div></a>
+      </div>
+      <div class="slide3">
+        <a href="https://www.tripadvisor.in/Restaurant_Review-g187147-d10622104-Reviews-Il_Grano-Paris_Ile_de_France.html">
+          <div class="hov">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/1d/f8/16/be/pates-fraiches-maison.jpg" alt="Grano">
+        <div><h2>Grano</h2></div>
+        </div></a>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="prev-btn3">&#8249;</button>
+      <button class="next-btn3">&#8250;</button>
+    </div>
+    </div>
+  </div>
+
+  <div class="slider" id="dest">
+    <div class="container">
+      <div class="text">
+        <h1>Destinations near Paris</h1>
+      </div>
+    <div class="slider-wrapper4">
+      <div class="slide4">
+        <a href="https://www.tripadvisor.in/SmartDeals-g187265-Lyon_Rhone_Auvergne_Rhone_Alpes-Hotel-Deals.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/74/6e/bd/lyon.jpg?w=500&h=300&s=1" alt="Lyon">
+            <div class="image-text">
+            <h2>Lyon</h2>
+          </div></div>
+        </a>
+      </div>
+      <div class="slide4">
+        <a href="https://www.tripadvisor.in/Tourism-g187234-Nice_French_Riviera_Cote_d_Azur_Provence_Alpes_Cote_d_Azur-Vacations.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/25/ed/73/caption.jpg?w=500&h=300&s=1" alt="Nice">
+            <div class="image-text">
+            <h2>Nice</h2>
+          </div></div>
+        </a>
+      </div>
+      <div class="slide4">
+        <a href="https://www.tripadvisor.in/Tourism-g187079-Bordeaux_Gironde_Nouvelle_Aquitaine-Vacations.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/33/f7/19/bordeaux.jpg?w=700&h=500&s=1" alt="Bordeaux" height="400px">
+            <div class="image-text">
+            <h2>Bordeaux</h2>
+          </div></div>
+        </a>
+      </div>
+      <div class="slide4">
+        <a href="https://www.tripadvisor.in/Tourism-g187175-Toulouse_Haute_Garonne_Occitanie-Vacations.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/c5/13/bb/provided-by-office-de.jpg?w=700&h=500&s=1" alt="Toulouse">
+            <div class="image-text">
+            <h2>Toulouse</h2>
+          </div></div>
+        </a>
+      </div>
+      <div class="slide4">
+        <a href="https://www.tripadvisor.in/Tourism-g187153-Montpellier_Herault_Occitanie-Vacations.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/4a/2a/ed/planet-ocean-montpellier.jpg?w=500&h=300&s=1" alt="Montpellier">
+            <div class="image-text">
+            <h2>Montpellier</h2>
+          </div></div>
+        </a>
+      </div>
+      <div class="slide4">
+        <a href="https://www.tripadvisor.in/Search?q=nantes&searchSessionId=001b9f7087fd2c5d.ssid&searchNearby=false&geo=187153&sid=EAF14F21017744B3BEB3340FD16146A61689630598214&blockRedirect=true">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/33/f7/3a/nantes.jpg?w=700&h=500&s=1" alt="Nantes">
+            <div class="image-text">
+            <h2>Nantes</h2>
+          </div></div>
+        </a>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="prev-btn4">&#8249;</button>
+      <button class="next-btn4">&#8250;</button>
+    </div>
+    </div>
+  </div>
+
+  <section class="transport-section" id="transport">
+  <h1 class="transport">Transport</h1>
+    <div class="transport-card">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/32/a3/75/maybach-minivan-exterior.jpg?w=1200&h=-1&s=1" alt="Car">
+      <div class="details">
+        <h1 style="color: black;">Rent a Car</h1>
+        <p>Explore the destinations in Paris at your own pace with our car rental services.</p>
+        <a href="https://www.tripadvisor.com/RentalCars-g187147-Paris_Ile_de_France.html" class="btn">Learn More</a>
+      </div>
+    </div>
+
+    <div class="transport-card">
+      <img src="https://media-cdn.tripadvisor.com/media/photo-o/0e/cd/51/5c/air-india-express.jpg">
+      <div class="details">
+        <h1 style="color: black;">Book Flights</h1>
+        <p>Find and book flights to Paris with competitive fares.</p>
+        <a href="https://www.tripadvisor.in/Flights-g187147-Paris_Ile_de_France-Cheap_Discount_Airfares.html" class="btn">Learn More</a>
+      </div>
+    </div>
+
+    <div class="transport-card">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/f8/10/80/hello-from-me-in-cockpit.jpg?w=1200&h=-1&s=1" alt="Train">
+      <div class="details">
+        <h1 style="color: black;">Train Tickets</h1>
+        <p>Travel conveniently by booking train tickets for your preferred routes.</p>
+        <a href="https://www.tripadvisor.com/Attraction_Review-g187147-d1963430-Reviews-TGV-Paris_Ile_de_France.html" class="btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+  const slider = document.querySelector('.slider');
+
+  const sliderWrapper = document.querySelector('.slider-wrapper');
+  const sliderWrapper2 = document.querySelector('.slider-wrapper2');
+  const sliderWrapper3 = document.querySelector('.slider-wrapper3');
+  const sliderWrapper4 = document.querySelector('.slider-wrapper4');
+
+
+  const slides = document.querySelectorAll('.slide');
+  const slides2 = document.querySelectorAll('.slide2');  
+  const slides3 = document.querySelectorAll('.slide3');
+  const slides4 = document.querySelectorAll('.slide4');
+
+
+
+  const prevBtn = document.querySelector('.prev-btn');
+  const prevBtn2 = document.querySelector('.prev-btn2');
+  const prevBtn3 = document.querySelector('.prev-btn3');
+  const prevBtn4 = document.querySelector('.prev-btn4');
+
+
+  const nextBtn = document.querySelector('.next-btn');
+  const nextBtn2 = document.querySelector('.next-btn2');
+  const nextBtn3 = document.querySelector('.next-btn3');
+  const nextBtn4 = document.querySelector('.next-btn4');
+
+
+
+  let currentIndex = 0;
+  const slideWidth = slides[0].clientWidth;
+  const slidesPerPage = 3;
+
+  prevBtn.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex -= slidesPerPage;
+      if (currentIndex < 0) {
+        currentIndex = 0;
+      }
+      sliderWrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+  prevBtn2.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex -= slidesPerPage;
+      if (currentIndex < 0) {
+        currentIndex = 0;
+      }
+      sliderWrapper2.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+  prevBtn3.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex -= slidesPerPage;
+      if (currentIndex < 0) {
+        currentIndex = 0;
+      }
+      sliderWrapper3.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+  prevBtn4.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex -= slidesPerPage;
+      if (currentIndex < 0) {
+        currentIndex = 0;
+      }
+      sliderWrapper4.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+
+  nextBtn.addEventListener('click', () => {
+    if (currentIndex < slides.length - slidesPerPage) {
+      currentIndex += slidesPerPage;
+      sliderWrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+  nextBtn2.addEventListener('click', () => {
+    if (currentIndex < slides2.length - slidesPerPage) {
+      currentIndex += slidesPerPage;
+      sliderWrapper2.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+  nextBtn3.addEventListener('click', () => {
+    if (currentIndex < slides3.length - slidesPerPage) {
+      currentIndex += slidesPerPage;
+      sliderWrapper3.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });  
+  nextBtn4.addEventListener('click', () => {
+    if (currentIndex < slides4.length - slidesPerPage) {
+      currentIndex += slidesPerPage;
+      sliderWrapper4.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+  </script>
+
+</body></html>

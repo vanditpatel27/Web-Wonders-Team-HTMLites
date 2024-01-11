@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)file:///C:/Users/Vandit/Downloads/customer%20review%20form%20hotel%20(6).html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>Hotel Review Form</title>
+  <style>
+
+
+    body {
+      font-family:'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 20px;
+      background-image: url("https://i.pinimg.com/originals/df/19/31/df19315e85722405c0d24b7b3be757dd.jpg");
+      position: relative;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  
+    .form-container {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  
+    .form-group {
+      margin-bottom: 20px;
+    }
+  
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #0a0a0a;
+      border-radius: 10px;
+    }
+  
+    .form-group textarea {
+      height: 100px;
+    }
+
+    h1{
+      text-shadow: rgb(227, 121, 97) 3px 3px 3px;
+      text-align: center;
+      text-shadow: rgb(92, 91, 90) 3px 3px 3px;
+      background-color: rgb(89,236,145);
+      border: 2px solid black;
+      border-radius: 20px;
+      
+    }
+  
+    .form-group input[type="submit"] {
+      background-color: rgba(210, 137, 26, 0.634);
+      color: rgb(15, 15, 15);
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1 style="text-align:center ; color: rgb(0, 0, 0);">CUSTOMER REVIEW FORM</h1>
+    <form id="reviewForm">
+      <div class="form-group">
+        <hr>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required="">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required="">
+      </div>
+      <div class="form-group">
+        <label for="rating">Rating:</label>
+        <input type="number" id="rating" name="rating" min="1" max="10" required="">
+      </div>
+      <div class="form-group">
+        <label for="review1">REVIEW ABOUT ACCOMODATION/ HOUSEKEEPING SERVICES:</label>
+        <textarea id="review1" name="review1" required=""></textarea>
+        <div class="form-group">
+            <label for="review2">REVIEW ABOUT DINING:</label>
+            <textarea id="review2" name="review2" required=""></textarea>
+            <div class="form-group">
+                <label for="review3">ANY SUGGESTIONS FROM YOUR SIDE:</label>
+                <textarea id="review3" name="review3" required=""></textarea>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Submit Review">
+      </div>
+      <h3 style="text-align:center ; color: rgb(11, 0, 163);">THANK YOU</h3>
+    
+  </div>
+
+  <script>
+    document.getElementById('reviewForm').addEventListener('submit', function(event) {
+      event.preventDefault(); 
+      
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var rating = document.getElementById('rating').value;
+      var review1 = document.getElementById('review1').value;
+      var review2 = document.getElementById('review2').value;
+      var review3 = document.getElementById('review3').value;
+      
+      alert('Thank you for your review!\n\nName: ' + name + '\nEmail: ' + email + '\nRating: ' + rating + '\nReview about accomodation/services: ' + review1+'\nReview about dining: ' + review2+'\nSuggestions: ' + review3);
+            
+      document.getElementById('reviewForm').reset(); 
+    });
+  </script>
+
+
+</div></form></div></body></html>

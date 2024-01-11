@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)file:///C:/Users/vishwa/Desktop/WEB%20WONDERS/venicefontchanges.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>
+    Maldives
+  </title>
+  <link rel="stylesheet" href="./Venice_upd_files/css">
+  <link rel="stylesheet" href="./Venice_upd_files/css(1)">
+</head>
+<body>
+  <style>
+    body {
+        font-family: "Audiowide", sans-serif;
+        background-image: url("https://cdn.hovia.com/app/uploads/blue-abstract-vector-world-map-wallpaper-mural-Plain-820x532.jpg");
+        
+      }
+    nav {
+            display: flex;
+            align-items: center ;
+            justify-content: center;
+            position: relative;
+          }
+          
+          ul {
+            list-style-type: none;
+            display: flex;
+          }
+          
+          li {
+            list-style: none;
+            font-size: 1.3em;
+          }
+          #navbar::before{
+            content: "";
+            background-color: black;
+            position: relative;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+          
+          a {
+            color:darkgreen;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+          }
+          
+          a:hover {
+            background-color: rgba(59, 236, 252, 0.489);
+            text-decoration: none;
+          }
+
+      .m1{
+        text-align: left;
+        margin-left: 400px !important;
+        margin-top: 20px;
+        color: yellow !important;
+        font-size: 64px;
+      }
+      .m2{
+        text-align: center;
+        font-size: 48px;
+      }
+
+        table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      td {
+        border: 2px;
+        padding: 0px;
+        height: 50px;
+      }
+
+      .full-height {
+        grid-row: span 2;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .hov{
+        position: relative;
+        display: inline-block;
+      }
+
+      .hov img{
+          opacity:1;
+          display: block;
+          width: 100%;
+          height: auto;
+      }
+
+      .hov img:hover{
+        opacity:0.5;
+      } 
+
+      .hov .image-text {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: purple ;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+        margin-top: 10px;
+
+      }
+      .image-text h2 {
+        margin: 0;
+        color: crimson;
+      }
+      
+      .slider {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+      }
+
+      .slider-wrapper,.slider-wrapper2,.slider-wrapper3,.slider-wrapper4 {
+        position: relative; /* Update position to relative */
+        display: flex;
+        transition: transform 0.5s ease;
+      }
+
+      .slide,.slide2,.slide3,.slide4 {
+        flex: 0 0 calc(33.33% - 10px);
+        max-width: 33.33%;
+        transition: opacity 0.5s ease;
+        position: relative; /* Update position to relative */
+        text-align:center; 
+        margin-bottom: 20px;
+      }
+
+      .slide img,.slide2 img,.slide3 img ,.slide4 img {
+        display: block;
+        width: 300px; /* Set the desired width */
+        height: 200px; /* Set the desired height */
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      .controls {
+        position:absolute;
+        top: 50%;
+        left: -10px;
+        transform: translateY(-50%);
+        display: flex;
+        z-index: 1; /* Ensure buttons appear above images */
+      }
+
+      .prev-btn,
+      .next-btn,.prev-btn2,.next-btn2,.prev-btn3,.next-btn3,.next-btn4,.prev-btn4 {
+        border: none;
+        background: transparent;
+        font-size: 120px;
+        color: aqua;
+        padding: 10px;
+        cursor: pointer;
+        outline: none;
+      }
+
+      .prev-btn,.prev-btn2,.prev-btn3,.prev-btn4 {
+        margin-right: 10px;
+        align-items:left;
+        
+      }
+
+      .next-btn,.next-btn2,.next-btn3,.next-btn4 {
+        margin-left: 1130px;
+        align-items: right;
+      }
+
+      .transport{
+        text-align: center;
+        color: orange !important;
+        font-size: 36px ;
+      }
+      .transport-section {
+      padding: 20px;
+      background-color: khaki;
+    }
+
+    .transport-card {
+        border: 1px solid brown;
+        background-color: lightgray;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .transport-card img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-right: 20px;
+    }
+
+    .transport-card .details {
+      flex-grow: 1;
+    }
+
+    .transport-card h2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-style: normal;
+        color: black;
+    }
+
+    .transport-card p {
+        margin: 0;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 300;
+        font-style: oblique;
+        color: black;
+        
+      }
+      p{
+      font-size: large;
+      font-weight: normal;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: firebrick;
+      }
+      h1{
+          font-family:'Times New Roman', Times, serif;
+          font-size: larger;
+          font-weight: bolder;
+          font-variant: normal ;
+          font-kerning: normal;
+          font-variant-east-asian: normal;
+          color: rgb(2, 0, 52);
+      }
+      h2{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: medium;
+      font-weight: bold;
+      color: rgb(5, 0, 143);
+      }
+
+
+  </style>
+
+  <div>
+  <p class="m1"><h1 class="m2">Maldives</h1> </p>  
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="#hotels">HOTEL ROOMS/ACCOMODATION</a></li>
+      <li><a href="#thingstodo">THINGS TO DO</a></li>
+      <li><a href="#restaurants">RESTAURANTS</a></li>
+      <li><a href="#dest">POPULAR DESTINATIONS</a></li>
+      <li><a href="#transport">TRANSPORT</a></li>
+    </ul>
+  </nav>
+
+  <table>
+    <tr>
+      <td rowspan="2" class="full-height">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/33/dc/98/caption.jpg?w=1400&h=900&s=1" alt="Image 1">
+      </td>
+      <td>
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/9b/2f/ce/maldives.jpg?w=1000&h=500&s=1" alt="Image 2">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/26/9d/e9/sunset-from-the-water.jpg?w=800&h=400&s=1" alt="Image 3">
+      </td>
+    </tr>
+  </table>
+
+  <div class="slider" id="hotels">
+    <div class="container">
+      <div class="text">
+        <h1>Stay</h1>
+        <p>A mix of the charming, iconic, and modern.</p>
+        <p>
+          <a class="UikNM _G B- _S _T c G_ y bYExr xARtZ wnNQG" href="https://www.tripadvisor.in/Hotels-g293953-Maldives-Hotels.html">See all</a>
+        </p>
+      </div>
+    <div class="slider-wrapper">
+      <div class="slide">
+        <a href="https://www.tripadvisor.in/Hotel_Review-g2050017-d2045398-Reviews-Six_Senses_Laamu-Olhuveli_Island.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/60/8b/2b/chill.jpg?w=1100&h=-1&s=1" alt="Six Senses Laamu">
+          </div>
+          <div>
+            <h2>Six Senses Laamu    </h2>
+          </div>
+        </a>
+      </div>
+      <div class="slide">
+        <a href="https://www.tripadvisor.in/Hotel_Review-g6855076-d563828-Reviews-One_Only_Reethi_Rah-Reethirah_Island.html">
+          <div class="hov">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/c0/0b/b1/guest-room.jpg?w=1100&h=-1&s=1" alt="One&Only Reethi Rah">
+          </div>
+          <div>
+          <h2>One&Only Reethi Rah</h2>
+        </div>
+        </a>
+      </div>
+      <div class="slide">
+        <a href="https://www.tripadvisor.in/Hotel_Review-g2371284-d2371045-Reviews-Ayada_Maldives-Maguhdhuvaa.html">
+          <div class="hov">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/3a/c5/10/ayada-maldives.jpg?w=2000&h=-1&s=1" alt="Ayada Maldives
+          ">
+          </div>
+          <div>
+          <h2>Ayada Maldives
+        </h2>
+        </div>
+        </a>
+      </div>
+      <div class="slide">
+        <a href="https://www.tripadvisor.in/Hotel_Review-g6855168-d301894-Reviews-Four_Seasons_Resort_Maldives_at_Kuda_Huraa-Huraa_Island.html">
+          <div class="hov">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/bb/91/fa/water-villa-with-pool.jpg?w=2000&h=-1&s=1" alt=" Four Seasons Resort Maldives at Kuda Huraa">
+        <div><h2> Four Seasons Resort Maldives at Kuda Huraa</h2></div>
+      </div>
+    </a></div>
+      <div class="slide">
+        <a href="https://www.tripadvisor.in/Hotel_Review-g6697246-d4361946-Reviews-Cheval_Blanc_Randheli-Randheli_Island.html">
+          <div class="hov">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/30/27/98/private-island.jpg?w=600&h=-1&s=1" alt="Cheval Blanc Randheli
+        ">
+        <div><h2>Cheval Blanc Randheli
+        </h2></div>
+        </div></a>
+      </div>
+      <div class="slide">
+        <a href="https://www.tripadvisor.in/Hotel_Review-g25339862-d7192898-Reviews-Amilla_Maldives_Resort_Residences-Amilla_Fushi.html">
+          <div class="hov">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/24/a0/ca/exterior.jpg?w=1100&h=-1&s=1" alt="Amilla Maldives Resort & Residences
+        ">
+        <div><h2>Amilla Maldives Resort & Residences
+        </h2></div>
+        </div></a>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="prev-btn">&#8249;</button>
+      <button class="next-btn">&#8250;</button>
+    </div>
+    </div>
+  </div>
+
+  <div class="slider" id="thingstodo">
+    <div class="container">
+      <div class="text">
+        <h1>Popular things to do</h1>
+        <p>Places to see, ways to wander, and signature experiences that define Maldives.</p>
+        <p>
+          <a class="UikNM _G B- _S _T c G_ y bYExr xARtZ wnNQG" href="https://www.tripadvisor.in/Attractions-g293953-Activities-Maldives.html">See all</a>
+        </p>
+      </div>
+    <div class="slider-wrapper2">
+      <div class="slide2">
+        <a href="https://www.tripadvisor.in/AttractionProductReview-g2553632-d18974698-Whale_Shark_Tour-Maafushi_Island.html">
+          <div class="hov">
+            <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/09/2b/4e/6a.jpg" alt="Whale Shark Tour">
+          </div>
+          <div>
+            <h2>Whale Shark Tour</h2>
+          </div>
+        </a>
+      </div>
+      <div class="slide2">
+        <a href="https://www.tripadvisor.in/AttractionProductReview-g1938013-d19651341-Maldives_Full_Fun_Adventure_Trip-Hulhumale.html">
+          <div class="hov">
+          <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/09/e7/19/38.jpg" alt="Maldives Full Fun Adventure Trip">
+          </div>
+          <div>
+          <h2>Maldives Full Fun Adventure Trip</h2>
+        </div>
+        </a>
+      </div>
+      <div class="slide2">
+        <a href="https://www.tripadvisor.in/AttractionProductReview-g1938013-d20118625-Dolphin_watching_Fishing_BBQ-Hulhumale.html">
+          <div class="hov">
+          <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0a/6a/0f/33.jpg" alt="Dolphin watching, Fishing & BBQ">
+          </div>
+          <div>
+          <h2>Dolphin watching, Fishing & BBQ</h2>
+        </div>
+        </a>
+      </div>
+      <div class="slide2">
+        <a href="https://www.tripadvisor.in/AttractionProductReview-g1938013-d12945273-Sandbank_Snorkeling_and_Sunset_Cruise-Hulhumale.html">
+          <div class="hov">
+        <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/06/7a/b9/65.jpg" alt="Sandbank Snorkeling and Sunset Cruise">
+        <div><h2>Sandbank Snorkeling and Sunset Cruise</h2></div>
+      </div>
+    </a>
+      </div>
+      <div class="slide2">
+        <a href="https://www.tripadvisor.in/AttractionProductReview-g1938013-d19495909-Sunset_Fishing_Trip-Hulhumale.html">
+          <div class="hov">
+        <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/09/b3/aa/34.jpg" alt="Sunset Fishing Trip">
+        <div><h2>Sunset Fishing Trip</h2></div>
+        </div></a>
+      </div>
+      <div class="slide2">
+        <a href="https://www.tripadvisor.in/AttractionProductReview-g2553632-d19802034-Professional_Photoshoot_at_Maafushi_Maldives-Maafushi_Island.html">
+          <div class="hov">
+        <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0a/9c/69/b6.jpg" alt="Professional Photoshoot at Maafushi, Maldives">
+        <div><h2>Professional Photoshoot at Maafushi, Maldives</h2></div>
+        </div></a>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="prev-btn2">&#8249;</button>
+      <button class="next-btn2">&#8250;</button>
+    </div>
+    </div>
+  </div>
+
+  <div class="slider" id="restaurants">
+    <div class="container">
+      <div class="text">
+        <h1>Eat</h1>
+        <p>Quintessential Maldives restaurants, bars, and beyond.</p>
+        <p>
+          <a class="UikNM _G B- _S _T c G_ y bYExr xARtZ wnNQG" href="https://www.tripadvisor.in/Restaurants-g293953-Maldives.html">See all</a>
+        </p>
+      </div>
+    <div class="slider-wrapper3">
+      <div class="slide3">
+        <a href="https://www.tripadvisor.in/Restaurant_Review-g298325-d1057523-Reviews-Ithaa_Undersea_Restaurant-Rangali_Island.html">
+          <div class="hov">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/19/a2/18/f4/photo4jpg.jpg" alt="Ithaa Undersea Restaurant">
+          </div>
+          <div>
+            <h2>Ithaa Undersea Restaurant</h2>
+          </div>
+        </a>
+      </div>
+      <div class="slide3">
+        <a href="https://www.tripadvisor.in/Restaurant_Review-g3612472-d3822515-Reviews-Muraka_Restaurant-Mirihi.html">
+          <div class="hov">
+          <img src="https://media-cdn.tripadvisor.com/media/photo-s/1c/39/8c/6c/best-spot-for-a-sunset.jpg" alt="Muraka Restaurant
+          ">
+          </div>
+          <div>
+          <h2>Muraka Restaurant
+        </h2>
+        </div>
+        </a>
+      </div>
+      <div class="slide3">
+        <a href="https://www.tripadvisor.in/Restaurant_Review-g1223683-d2459474-Reviews-Sea_Fire_Salt_Anantara_Mai_Khao_Phuket_Villas-Mai_Khao_Thalang_District_Phuket.html">
+          <div class="hov">
+          <img src="https://media-cdn.tripadvisor.com/media/photo-s/21/e5/db/0b/seafiresalt-conner-seats.jpg" alt="Sea Fire Salt - Anantara Mai Khao Phuket Villas
+          ">
+          </div>
+          <div>
+          <h2>Sea Fire Salt - Anantara Mai Khao Phuket Villas
+        </h2>
+        </div>
+        </a>
+      </div>
+      <div class="slide3">
+        <a href="https://www.tripadvisor.in/Restaurant_Review-g12200309-d12322945-Reviews-5_8_Undersea_Restaurant-Hurawalhi.html">
+          <div class="hov">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/12/90/29/bc/interior-of-58-undersea.jpg" alt="5.8 Undersea Restaurant
+        ">
+        <div><h2>5.8 Undersea Restaurant
+        </h2></div>
+      </div>
+    </a></div>
+      <div class="slide3">
+        <a href="https://www.tripadvisor.in/Hotel_Review-g6695192-d3948884-Reviews-Velaa_Private_Island-Velaa_Island.html">
+          <div class="hov">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/09/3e/73/guest-arrival-jetty.jpg?w=1400&h=-1&s=1" alt="Velaa Private Island">
+        <div><h2>Velaa Private Island</h2></div>
+        </div></a>
+      </div>
+      <div class="slide3">
+        <a href="https://www.tripadvisor.in/Restaurant_Review-g3612500-d8124710-Reviews-Subsix-Dhaalu_Atoll.html">
+          <div class="hov">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/08/64/f9/c2/subsix.jpg" alt="Subsix">
+        <div><h2>Subsix</h2></div>
+        </div></a>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="prev-btn3">&#8249;</button>
+      <button class="next-btn3">&#8250;</button>
+    </div>
+    </div>
+  </div>
+
+  <div class="slider" id="dest">
+    <div class="container">
+      <div class="text">
+        <h1>Destinations</h1>
+      </div>
+    <div class="slider-wrapper4">
+      <div class="slide4">
+        <a href="https://www.tripadvisor.in/Tourism-g6853009-Olhuveli_Island-Vacations.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/41/a2/64/vu-deu-bungalo.jpg?w=1400&h=900&s=1" alt="Olhuveli Island">
+            <div class="image-text">
+            <h2>Olhuveli Island</h2>
+          </div></div>
+        </a>
+      </div>
+      <div class="slide4">
+        <a href="https://www.tripadvisor.in/Tourism-g298571-Male-Vacations.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/b1/4c/e0/artificial-beach.jpg?w=1400&h=-1&s=1" alt="Male">
+            <div class="image-text">
+            <h2>Male</h2>
+          </div></div>
+        </a>
+      </div>
+      <div class="slide4">
+        <a href="https://www.tripadvisor.in/Tourism-g4473389-Iru_fushi-Vacations.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/2c/c7/ec/2013.jpg?w=1400&h=900&s=1" alt="Iru-fushi" height="400px">
+            <div class="image-text">
+            <h2>Iru-fushi</h2>
+          </div></div>
+        </a>
+      </div>
+      <div class="slide4">
+        <a href="https://www.tripadvisor.in/Tourism-g3612500-Dhaalu_Atoll-Vacations.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/7d/ff/5c/aquaholics.jpg?w=1400&h=900&s=1" alt="Dhaalu Atoll">
+            <div class="image-text">
+            <h2>Dhaalu Atoll</h2>
+          </div></div>
+        </a>
+      </div>
+      <div class="slide4">
+        <a href="https://www.tripadvisor.in/Tourism-g2104579-Lankanfinolhu_Island-Vacations.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/a8/db/33/lankanfinolhu-island.jpg?w=1100&h=-1&s=1" alt="Lankanfinolhu Island">
+            <div class="image-text">
+            <h2>Lankanfinolhu Island</h2>
+          </div></div>
+        </a>
+      </div>
+      <div class="slide4">
+        <a href="https://www.tripadvisor.in/Tourism-g6695203-Furanafushi_Island-Vacations.html">
+          <div class="hov">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/d1/a3/1b/extreme-maldives-water.jpg?w=1400&h=900&s=1" alt="Furanafushi Island">
+            <div class="image-text">
+            <h2>Furanafushi Island</h2>
+          </div></div>
+        </a>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="prev-btn4">&#8249;</button>
+      <button class="next-btn4">&#8250;</button>
+    </div>
+    </div>
+  </div>
+
+  <section class="transport-section" id="transport">
+  <h1 class="transport">Transport</h1>
+    <div class="transport-card">
+      <img src="https://static1.clickandboat.com/v1/p/G25ZzbKSnw0zbVhBpQCJ9RgBXTKipE3n.search2.jpg" alt="Car">
+      <div class="details">
+        <h1 style="color: black;">Rent a Boat</h1>
+        <p>Explore the destinations in Maldives with your very own boat.</p>
+        <a href="https://www.clickandboat.com/en/boat-rental/maldives" class="btn">Learn More</a>
+      </div>
+    </div>
+
+    <div class="transport-card">
+      <img src="https://www.millenniumpost.in/h-upload/2023/01/13/663806-dbe3f629ed.webp" alt="Flight">
+      <div class="details">
+        <h1 style="color: black;">Book Flights</h1>
+        <p>Find and book flights to Maldives with competitive fares.</p>
+        <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwic3eCWpZGAAxWh-kwCHWL4Ai8YABABGgJ0bQ&ohost=www.google.com&cid=CAASJuRoHCphtzyaZY4y3ySmzVR38VX9uFJ2jTc1IfH2q7NN1BlEO5xt&sig=AOD64_2uWuBPC_N6M_34j2xtZmp7iZ1Xpw&q&adurl&ved=2ahUKEwjQhNqWpZGAAxXEiVYBHcu9CCIQ0Qx6BAgPEAM" class="btn">Learn More</a>
+      </div>
+    </div>
+
+    <div class="transport-card">
+      <img src="https://www.holidify.com/images/cmsuploads/compressed/seaplane_20180716173513.jpg" alt="Seaplane">
+      <div class="details">
+        <h1 style="color: black;">Seaplane Tickets</h1>
+        <p>Travel conveniently by booking train tickets for your preferred routes.</p>
+        <a href="https://www.transmaldivian.com/" class="btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+  const slider = document.querySelector('.slider');
+
+  const sliderWrapper = document.querySelector('.slider-wrapper');
+  const sliderWrapper2 = document.querySelector('.slider-wrapper2');
+  const sliderWrapper3 = document.querySelector('.slider-wrapper3');
+  const sliderWrapper4 = document.querySelector('.slider-wrapper4');
+
+
+  const slides = document.querySelectorAll('.slide');
+  const slides2 = document.querySelectorAll('.slide2');  
+  const slides3 = document.querySelectorAll('.slide3');
+  const slides4 = document.querySelectorAll('.slide4');
+
+
+
+  const prevBtn = document.querySelector('.prev-btn');
+  const prevBtn2 = document.querySelector('.prev-btn2');
+  const prevBtn3 = document.querySelector('.prev-btn3');
+  const prevBtn4 = document.querySelector('.prev-btn4');
+
+
+  const nextBtn = document.querySelector('.next-btn');
+  const nextBtn2 = document.querySelector('.next-btn2');
+  const nextBtn3 = document.querySelector('.next-btn3');
+  const nextBtn4 = document.querySelector('.next-btn4');
+
+
+
+  let currentIndex = 0;
+  const slideWidth = slides[0].clientWidth;
+  const slidesPerPage = 3;
+
+  prevBtn.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex -= slidesPerPage;
+      if (currentIndex < 0) {
+        currentIndex = 0;
+      }
+      sliderWrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+  prevBtn2.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex -= slidesPerPage;
+      if (currentIndex < 0) {
+        currentIndex = 0;
+      }
+      sliderWrapper2.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+  prevBtn3.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex -= slidesPerPage;
+      if (currentIndex < 0) {
+        currentIndex = 0;
+      }
+      sliderWrapper3.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+  prevBtn4.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex -= slidesPerPage;
+      if (currentIndex < 0) {
+        currentIndex = 0;
+      }
+      sliderWrapper4.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+
+  nextBtn.addEventListener('click', () => {
+    if (currentIndex < slides.length - slidesPerPage) {
+      currentIndex += slidesPerPage;
+      sliderWrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+  nextBtn2.addEventListener('click', () => {
+    if (currentIndex < slides2.length - slidesPerPage) {
+      currentIndex += slidesPerPage;
+      sliderWrapper2.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+  nextBtn3.addEventListener('click', () => {
+    if (currentIndex < slides3.length - slidesPerPage) {
+      currentIndex += slidesPerPage;
+      sliderWrapper3.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });  
+  nextBtn4.addEventListener('click', () => {
+    if (currentIndex < slides4.length - slidesPerPage) {
+      currentIndex += slidesPerPage;
+      sliderWrapper4.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  });
+  </script>
+</body>
+</html>
